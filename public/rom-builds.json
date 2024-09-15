@@ -166,7 +166,7 @@
         "date": "Weekly",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "notes": [
-          "Read wiki carefully on how to understand the requirements and how to flash properly",
+          "Read wiki carefully to understand the requirements and how to flash properly",
           "In case if you find any bugs, report with proper logs"
         ],
 
@@ -209,6 +209,43 @@
         ],
       "Links":"https://get.libremobileos.com/changes"
 
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+    "X00TD": [
+      {
+        "name": "LineageOS",
+        "version": "20",
+        "project_name": "Official",
+        "date": "Weekly",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
+        "notes": [
+          "Read wiki carefully to understand the requirements and how to flash properly",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://download.lineageos.org/devices/X00TD/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://wiki.lineageos.org/devices/X00TD/"
       }
     ],
 
