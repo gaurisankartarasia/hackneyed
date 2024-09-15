@@ -20,6 +20,10 @@
           "In case if you find any bugs, report with proper logs"
         ],
 
+        "issues": [
+          "Nothing found so far."
+        ],
+
         "flashingSteps": [
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot",
           "Reboot to bootloader",
@@ -108,6 +112,9 @@
           "In case if you find any bugs, report with proper logs"
         ],
 
+        "issues": [
+          "Nothing found so far."
+        ],
 
         "flashingSteps": [
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot",
@@ -265,7 +272,6 @@
           "For install instructions, visit product wiki page from LineageOS website"
         ],
 
-
         "downloads": [
           {
             "name": "Full ROM",
@@ -301,6 +307,10 @@
           "In case if you find any bugs, report with proper logs"
         ],
 
+        "issues": [
+          "Nothing found so far."
+        ],
+
         "downloads": [
           {
             "name": "Gapps Build",
@@ -332,6 +342,10 @@
           "Disabled Force encryption",
           "Clean Flash if you are coming from A11/any encrypted rom",
           "In case if you find any bugs, report with proper logs"
+        ],
+
+        "issues": [
+          "Nothing found so far."
         ],
 
         "downloads": [
@@ -369,6 +383,10 @@
           "In case if you find any bugs, report with proper logs"
         ],
 
+        "issues": [
+          "Nothing found so far."
+        ],
+
         "downloads": [
           {
             "name": "Download",
@@ -394,6 +412,10 @@
         "notes": [
           "This is only for 4.4 kernel based roms. Dont be oversmart by trying with 4.19 builds",
           "In case if you find any bugs, report with proper logs"
+        ],
+
+        "issues": [
+          "Nothing found so far."
         ],
 
         "downloads": [
@@ -469,6 +491,10 @@
           "Gapps already included in rom. so no need to flash again"
         ],
 
+        "issues": [
+          "Nothing found so far."
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -495,6 +521,10 @@
 
         "notes": [
           "Only use the mentioned recovery to flash"
+        ],
+
+        "issues": [
+          "Nothing found so far."
         ],
 
         "downloads": [
@@ -534,6 +564,10 @@
           "Only use the mentioned recovery to flash"
         ],
 
+        "issues": [
+          "Nothing found so far."
+        ],
+
         "downloads": [
           {
             "name": "karate",
@@ -564,6 +598,10 @@
 
         "notes": [
           "Only use the mentioned recovery to flash"
+        ],
+
+        "issues": [
+          "Nothing found so far."
         ],
 
         "downloads": [
@@ -598,6 +636,10 @@
 
         "notes": [
           "Outdated recoveries will cause issues, even the official twrp"
+        ],
+
+        "issues": [
+          "Nothing found so far."
         ],
 
         "downloads": [
@@ -641,6 +683,11 @@
           "Upstreamed to latest PE sources",
           "Other fixes and improvements"
         ],
+
+        "issues": [
+          "Nothing found so far."
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",

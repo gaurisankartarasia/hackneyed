@@ -160,6 +160,18 @@ const ROMDetailsPage = () => {
           </div>
         )}
 
+        {/* Known Isues Section */}
+        {romDetails.issues && romDetails.issues.length > 0 && (
+          <div className="p-6 md:p-8">
+            <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">Known Issues</h2>
+            <ul className="list-disc list-inside space-y-2 text-gray-300">
+              {romDetails.issues.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* Flashing Steps Section */}
         {romDetails.flashingSteps && romDetails.flashingSteps.length > 0 && (
           <div className="p-6 md:p-8">
