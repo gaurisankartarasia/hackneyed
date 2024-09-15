@@ -363,6 +363,42 @@
 
 
       {
+        "name": "Pixel Experience",
+        "version": "13",
+        "project_name": "Official",
+        "date": "2023-11-26",
+        "android_version": "13",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe.avif?alt=media&token=9a183e6b-4022-4c49-bbff-33fb80f60f5c",
+        "changelog": [
+          "November security patch",
+          "Updated translations",
+          "Performance and under the hood improvements"
+        ],
+
+        "notes": [
+          "This is based on 4.4 kernel",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "issues": [
+          "Nothing found so far."
+        ],
+
+        "downloads": [
+          {
+            "name": "Normal Edition",
+            "url": "https://get.pixelexperience.org/changelog/X00TD/PixelExperience_X00TD-13.0-20231126-1516-OFFICIAL.zip"
+          },
+          {
+            "name": "Plus Edition",
+            "url": "https://get.pixelexperience.org/changelog/X00TD/PixelExperience_Plus_X00TD-13.0-20231126-1607-OFFICIAL.zip"
+          }
+        ],
+      "Links":"https://wiki.pixelexperience.org/devices/X00TD/install/"
+      },
+
+
+      {
         "name": "AOSP Extended",
         "version": "9.1",
         "project_name": "Unofficial",
