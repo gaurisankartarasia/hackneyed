@@ -246,6 +246,184 @@
           }
         ],
       "Links":"https://wiki.lineageos.org/devices/X00TD/"
+      },
+
+
+      {
+        "name": "LMODroid",
+        "version": "4.2",
+        "project_name": "Official",
+        "date": "Weekly",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "notes": [
+          "Check wiki for changelogs",
+          "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://get.libremobileos.com/devices/X00TD/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://get.libremobileos.com/changes"
+
+      },
+
+
+      {
+        "name": "AOSP Extended",
+        "version": "9.1",
+        "project_name": "Unofficial",
+        "date": "2022-06-06",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/aex.jpg?alt=media&token=10fe4193-3b81-4b38-8d26-a4e0ff327415",
+        "changelog": [
+          "Fixed cdfinger sensitivity",
+          "Properly enabled asus_lcd_early_unblank_func for X00TD",
+          "Updated fingerprint permissions",
+          "Dropped unused blobs",
+          "Sepolicy updates"
+        ],
+
+        "notes": [
+          "This is based on 4.4 kernel",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "downloads": [
+          {
+            "name": "Gapps Build",
+            "url": "https://www.pling.com/p/1635609/"
+          },
+          {
+            "name": "Vanila Build",
+            "url": "https://www.pling.com/p/1661168/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Proton AOSP",
+        "version": "12.0.0",
+        "project_name": "Unofficial",
+        "date": "2021-11-13",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/PROTONAOSP.png?alt=media&token=db5ba754-f8a0-4892-a762-b69629bd0b70",
+        "changelog": [
+          "Initial Build"
+        ],
+
+        "notes": [
+          "Android 12.1 based",
+          "This is based on 4.4 kernel",
+          "Build is Enforcing",
+          "Disabled Force encryption",
+          "Clean Flash if you are coming from A11/any encrypted rom",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "downloads": [
+          {
+            "name": "Download",
+            "url": "https://www.pling.com/p/1641266/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Hackneyed Kernel",
+        "version": "A12",
+        "project_name": "RC",
+        "date": "2022-07-17",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/hackneyed.jpeg?alt=media&token=62722782-8b2a-4b9d-b28d-7db7e1642dab",
+        "changelog": [
+          "Cleaned up dtsi files",
+          "Lowmemorykiller improvements",
+          "Set swappiness to 100",
+          "Zram fixes and improvements",
+          "Improved app opening speed",
+          "Reduced jitter",
+          "Optimized idle loop",
+          "Queue works on power efficient workqueue",
+          "wakeup source improvements",
+          "Merged cfq patches"
+        ],
+
+        "notes": [
+          "This is only for 4.4 kernel based roms. Dont be oversmart by trying with 4.19 builds",
+          "This is a HMP kernel",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "downloads": [
+          {
+            "name": "Download",
+            "url": "https://userupload.net/xm6mirge2dvl"
+          }
+        ]
+      },
+
+
+      {
+        "name": "TWRP Recovery",
+        "version": "3.6.2_12",
+        "project_name": "Unofficial",
+        "date": "2022-08-15",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/twrp.avif?alt=media&token=d63c4cd2-b962-4839-bc39-80de5d47fc5d",
+        "changelog": [
+          "Fixed decryption in some usecases",
+          "Updated dt2w node",
+          "Updated kernel"
+        ],
+
+        "notes": [
+          "This is only for 4.4 kernel based roms. Dont be oversmart by trying with 4.19 builds",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "downloads": [
+          {
+            "name": "Download",
+            "url": "https://www.pling.com/p/1588691/"
+          }
+        ]
+      },
+
+      {
+        "name": "LineageOS",
+        "version": "Official",
+        "project_name": "Archive",
+        "date": "Based on Availability of builds",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+        "notes": [
+          "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+          "Bug reports are not accepted on these builds sice these are not maintained now."
+        ],
+
+        "downloads": [
+          {
+            "name": "LineageOS 15.1",
+            "url": "https://dlupload.com/filedetail/1321083508"
+          },
+          {
+            "name": "LineageOS 16.0",
+            "url": "https://dlupload.com/filedetail/912464900"
+          },
+          {
+            "name": "LineageOS 18.1",
+            "url": "https://dlupload.com/filedetail/1184801432"
+          },
+          {
+            "name": "LineageOS 19.1",
+            "url": "https://dlupload.com/filedetail/654384465"
+          }
+        ]
       }
     ],
 
