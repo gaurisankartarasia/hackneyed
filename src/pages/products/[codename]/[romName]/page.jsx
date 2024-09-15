@@ -120,14 +120,28 @@ const ROMDetailsPage = () => {
             {/* Links to read or wiki */}
             {romDetails.Links && (
             <div className="mt-6">
-              <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">Read</h2>
+              <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">Wiki</h2>
               <a
                 className="text-blue-500 flex items-center underline hover:text-indigo-600 transition-colors duration-300"
                 href={romDetails.Links}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Read Wiki here &nbsp;  <RiShareBoxFill/>
+                Click here to read wiki page &nbsp;  <RiShareBoxFill/>
+              </a>
+            </div>
+          )}
+            {/* Link to xda thread */}
+            {romDetails.xda && (
+            <div className="mt-6">
+              <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">XDA</h2>
+              <a
+                className="text-blue-500 flex items-center underline hover:text-indigo-600 transition-colors duration-300"
+                href={romDetails.xda}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click here to go to XDA thread &nbsp;  <RiShareBoxFill/>
               </a>
             </div>
           )}
