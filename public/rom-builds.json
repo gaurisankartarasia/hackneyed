@@ -5,6 +5,7 @@
         "version": "21",
         "project_name": "Unofficial",
         "date": "2024-09-04",
+        "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "changelog": [
           "Initial build"
@@ -81,6 +82,7 @@
         "version": "21",
         "project_name": "Bleeding Edge",
         "date": "2024-06-17",
+        "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "changelog": [
           "Enabled CPUDDRLat boost",
@@ -164,6 +166,7 @@
         "version": "21",
         "project_name": "Official",
         "date": "Weekly",
+        "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "notes": [
           "Read wiki carefully to understand the requirements and how to flash properly",
@@ -190,6 +193,7 @@
         "version": "5.0",
         "project_name": "Official",
         "date": "Weekly",
+        "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
         "notes": [
           "Check wiki for changelogs",
@@ -229,6 +233,7 @@
         "version": "20",
         "project_name": "Official",
         "date": "Weekly",
+        "android_version": "13",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
         "notes": [
           "Read wiki carefully to understand the requirements and how to flash properly",
@@ -281,6 +286,7 @@
         "version": "9.1",
         "project_name": "Unofficial",
         "date": "2022-06-06",
+        "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/aex.jpg?alt=media&token=10fe4193-3b81-4b38-8d26-a4e0ff327415",
         "changelog": [
           "Fixed cdfinger sensitivity",
@@ -313,6 +319,7 @@
         "version": "12.0.0",
         "project_name": "Unofficial",
         "date": "2021-11-13",
+        "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/PROTONAOSP.png?alt=media&token=db5ba754-f8a0-4892-a762-b69629bd0b70",
         "changelog": [
           "Initial Build"
@@ -341,6 +348,7 @@
         "version": "A12",
         "project_name": "RC",
         "date": "2022-07-17",
+        "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/hackneyed.jpeg?alt=media&token=62722782-8b2a-4b9d-b28d-7db7e1642dab",
         "changelog": [
           "Cleaned up dtsi files",
@@ -375,6 +383,7 @@
         "version": "3.6.2_12",
         "project_name": "Unofficial",
         "date": "2022-08-15",
+        "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/twrp.avif?alt=media&token=d63c4cd2-b962-4839-bc39-80de5d47fc5d",
         "changelog": [
           "Fixed decryption in some usecases",
@@ -400,6 +409,7 @@
         "version": "Official",
         "project_name": "Archive",
         "date": "Based on Availability of builds",
+        "android_version": "8.0, 9.0, 11, 12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
         "notes": [
           "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
@@ -444,6 +454,7 @@
         "version": "18.1",
         "project_name": "Unofficial",
         "date": "2023-02-04",
+        "android_version": "11",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
         "changelog": [
           "Upto January security patch merged",
@@ -488,6 +499,7 @@
         "version": "10",
         "project_name":"Frozen Fire",
         "date": "2021-01-14",
+        "android_version": "10",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe.avif?alt=media&token=9a183e6b-4022-4c49-bbff-33fb80f60f5c",
         "changelog": [
           "Merged January security patch",

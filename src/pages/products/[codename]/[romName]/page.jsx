@@ -100,6 +100,7 @@ const ROMDetailsPage = () => {
             <p className="text-gray-200 font-semibold text-lg mb-4">Codename: <b>{deviceInfo.codename}</b></p>
             <p className="text-gray-300 mb-4">Device: {deviceInfo.device}</p>
             <p className="text-gray-400 mb-6">Updated: {romDetails.date}</p>
+            <p className="text-gray-400 mb-6">Android Version: {romDetails.android_version}</p>
 
             {/* Downloads Section */}
             <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 flex items-center"> Downloads</h2>
