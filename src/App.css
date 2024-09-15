@@ -1,0 +1,40 @@
+/* Customize NProgress */
+#nprogress .bar {
+    height: 3px;
+    background: green !important; /* blue color */
+  }
+  
+  #nprogress .peg {
+    box-shadow: 0 0 10px green, 0 0 5px green !important;
+  }
+  
+  #nprogress .spinner-icon {
+    border-top-color: green !important;
+    border-left-color: green !important;
+  }
+  
+  #nprogress .spinner {
+    display: none; 
+  }
+  
+
+
+   .fade-enter {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 500ms, transform 500ms;
+  }
+  

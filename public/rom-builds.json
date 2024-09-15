@@ -1,0 +1,306 @@
+{
+  "larry": [
+      {
+        "name": "LineageOS",
+        "version": "21",
+        "project_name": "Unofficial",
+        "date": "2024-09-04",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "changelog": [
+          "Initial build"
+        ],
+
+        "notes": [
+          "You need to be on latest stock rom before proceeding",
+          "Use the mentioned recovery to install",
+          "Take a backup of your data as this process will erase /data partition",
+          "Follow instructions carefully for flashing",
+          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "flashingSteps": [
+          "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot",
+          "Reboot to bootloader",
+          "Flash the downloaded image files to your device by typing:",
+          "fastboot flash boot boot.img",
+          "fastboot flash dtbo dtbo.img",
+          "fastboot flash vendor_boot vendor_boot.img",
+          "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+          "Format data (ignore if recovery complains about metadata type)",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command",
+          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+          "Format data once again after everything completed",
+          "Now you successfully flashed the rom. Boot into the rom and enjoy"
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://dlupload.com/filedetail/2021777463"
+          },
+          {
+            "name": "boot",
+            "url": "https://dlupload.com/filedetail/753848460"
+          },
+          {
+            "name": "dtbo",
+            "url": "https://dlupload.com/filedetail/1891663720"
+          },
+          {
+            "name": "vendor_boot",
+            "url": "https://dlupload.com/filedetail/1307090685"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+          
+        ]
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "oscar": [
+      {
+        "name": "LineageOS",
+        "version": "21",
+        "project_name": "Bleeding Edge",
+        "date": "2024-06-17",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "changelog": [
+          "Enabled CPUDDRLat boost",
+          "Fixed Wifi Display",
+          "Updated blobs from RMX3471_14.0.0.700(EX01)",
+          "Switched to common libperfmgr",
+          "Optimized auto brightness adjustment",
+          "Improved location accuracy",
+          "Fixed usb options greyed out settings",
+          "Fixed hotword causing ADSP crashes and panics",
+          "Kernel fully rebased to RMX3471_14.0.0.501(EX01)",
+          "Merged ACK 5.4.268",
+          "Merged security patches upto May 2024",
+          "LineageOS source upstream"
+        ],
+
+        "notes": [
+          "Clean flash is needed",
+          "Use the mentioned recovery to install",
+          "Take a backup of your data as this process will erase /data partition",
+          "Follow instructions carefully for flashing",
+          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+
+        "flashingSteps": [
+          "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot",
+          "Reboot to bootloader",
+          "Flash the downloaded image files to your device by typing:",
+          "fastboot flash boot boot.img",
+          "fastboot flash dtbo dtbo.img",
+          "fastboot flash vendor_boot vendor_boot.img",
+          "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+          "Connect device to computer",
+          "Go to Advanced > Reboot to fastboot",
+          "Now you will be in fastbootd mode. extract the downloaded firmware zip in pc",
+          "Under the firmware, there should be install.sh and install.bat files",
+          "Run install script as per your OS. (sh file if linux/ubuntu and bat if windows)",
+          "After successfull flash, reboot to recovery again",
+          "Format data (ignore if recovery complains about metadata type)",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command",
+          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+          "Format data once again after everything completed",
+          "Now you successfully flashed the rom. Boot into the rom and enjoy"
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://dlupload.com/filedetail/267035027"
+          },
+          {
+            "name": "boot",
+            "url": "https://dlupload.com/filedetail/1841352185"
+          },
+          {
+            "name": "dtbo",
+            "url": "https://dlupload.com/filedetail/511503401"
+          },
+          {
+            "name": "vendor_boot",
+            "url": "https://dlupload.com/filedetail/49761138"
+          },
+          {
+            "name": "Firmware",
+            "url": "https://dlupload.com/filedetail/1242859855"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Lineage OS",
+        "version": "21",
+        "project_name": "Official",
+        "date": "Weekly",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "notes": [
+          "Read wiki carefully on how to understand the requirements and how to flash properly",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://download.lineageos.org/devices/oscar/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://wiki.lineageos.org/devices/oscar/"
+
+      },
+
+
+      {
+        "name": "LMODroid",
+        "version": "5.0",
+        "project_name": "Official",
+        "date": "Weekly",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "notes": [
+          "Check wiki for changelogs",
+          "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://get.libremobileos.com/devices/oscar/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://get.libremobileos.com/changes"
+
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+    "karate": [
+      {
+        "name": "LineageOS",
+        "version": "18.1",
+        "project_name": "Unofficial",
+        "date": "2023-02-04",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
+        "changelog": [
+          "Upto January security patch merged",
+          "Added incremental OTA support",
+          "Rolled back to daisy blobs",
+          "Force enabled dt2w on Trebuchet",
+          "LineageOS source upstream"
+        ],
+
+        "notes": [
+          "Incremental OTA wont work if magisk is installed",
+          "Gapps already included in rom. so no need to flash again"
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://www.pling.com/p/1981675/"
+          },
+          {
+            "name": "Recovery",
+            "url": "https://www.pling.com/p/1575367/"
+          }
+        ]
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+    "mido": [
+      {
+        "name": "Pixel Experience",
+        "version": "10",
+        "project_name":"Frozen Fire",
+        "date": "2021-01-14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe.avif?alt=media&token=9a183e6b-4022-4c49-bbff-33fb80f60f5c",
+        "changelog": [
+          "Merged January security patch",
+          "Upstreamed to latest PE sources",
+          "Other fixes and improvements"
+        ],
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://bit.ly/3qivQbR"
+          }
+          
+        ]
+      }
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
