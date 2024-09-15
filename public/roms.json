@@ -5,7 +5,7 @@
 
   {
     "codename": "larry",
-    "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/product-green.png?alt=media&token=391b386e-bf01-4af8-91d5-3f4298105bf4",
+    "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/larry_new.png?alt=media&token=d19dd370-0399-4b67-8717-eb094a82a53b",
     "device": "OnePlus Nord CE 3 Lite 5G/OnePlus Nord N30",
     "version": "LineageOS 21",
     "date": "2024-09-05"
@@ -19,7 +19,7 @@
 
   {
     "codename": "luigi",
-    "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/luigi.png?alt=media&token=a24f36a9-e115-471c-a707-8135a70f0742",
+    "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/luigi_new.png?alt=media&token=b2ba3c80-de21-4744-8c82-fe4a41087c73",
     "device": "Realme 10 Pro 5G",
     "version": "LineageOS 21",
     "date": "2024-09-05"
@@ -33,7 +33,7 @@
 
     {
       "codename": "oscar",
-      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/black.png?alt=media&token=62cc26fd-695e-4803-9336-28e3fa030b4d",
+      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/oscarn_new.png?alt=media&token=2596bd84-be7b-4514-9d37-1670ae0df538",
       "device": "Realme 9 Pro 5G/Realme 9 5G/Realme Q5",
       "version": "LineageOS 21",
       "date": "Weekly"
@@ -50,7 +50,7 @@
     
     {
       "codename": "X00TD",
-      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/asus-zenfone-max-pro-m1-price-malaysia-2.png?alt=media&token=f90fedf7-6ad0-4d5e-9d79-7715940c20da",
+      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/X00TD_new.png?alt=media&token=5018ff38-e22c-4693-a8ed-02fcd09f1bf0",
       "device": "Asus Zenfone Max Pro M1",
       "version": "Pixel Experience 13",
       "date": "2023-07-20"
@@ -66,7 +66,7 @@
 
     {
       "codename": "mido",
-      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/687474703a2f2f6930312e6170706d6966696c652e636f6d2f77656266696c652f676c6f62616c696d672f372f35333735353746332d413446312d323439302d453944332d3133384232413131444246362e706e67.png?alt=media&token=65fcea4d-f83f-4f6d-b97a-b10586c1e37e",
+      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/mido_new.png?alt=media&token=8fa8e778-ad95-404f-a03f-2612b6f5236b",
       "device": "Xiaomi Redmi Note 4",
       "version": "Havoc-OS 4.11",
       "date": "2023-08-10"
@@ -85,7 +85,7 @@
 
     {
       "codename": "karate",
-      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/thumb_148666_phone_front_big.png?alt=media&token=faaff26e-9128-4c42-b1b4-671937060b61",
+      "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/karate_new.png?alt=media&token=b9d8665c-dbd7-4703-bb74-f92cb0f9c15b",
       "device": "Lenovo K6 Power",
       "version": "ResurrectionRemix 8.5.9",
       "date": "2023-09-01"
