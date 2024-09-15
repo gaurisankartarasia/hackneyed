@@ -479,6 +479,141 @@
             "url": "https://www.pling.com/p/1575367/"
           }
         ]
+      },
+
+
+      {
+        "name": "DotOS",
+        "version": "5.2",
+        "project_name": "Unofficial",
+        "date": "2021-10-14",
+        "android_version": "11",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/dotOS_banner-5.0.png?alt=media&token=461712de-a94b-4e3e-8e3f-3f29708f90f0",
+        "changelog": [
+          "Initial Build"
+        ],
+
+        "notes": [
+          "Only use the mentioned recovery to flash"
+        ],
+
+        "downloads": [
+          {
+            "name": "karate",
+            "url": "https://www.pling.com/p/1616809/"
+          },
+          {
+            "name": "karatep",
+            "url": "https://www.pling.com/p/1616810/"
+          },
+          {
+            "name": "Recovery",
+            "url": "https://www.pling.com/p/1575367/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "AOSP Extended",
+        "version": "8.6",
+        "project_name": "Unofficial",
+        "date": "2021-10-15",
+        "android_version": "11",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/aex.jpg?alt=media&token=10fe4193-3b81-4b38-8d26-a4e0ff327415",
+        "changelog": [
+          "Updated media configs from tissot",
+          "Updated sdfat to 2.4.5",
+          "Updated brightness overlays from tissot",
+          "Optimized for 2gb users",
+          "Merged October security patch",
+          "Enabled wireguard support"
+        ],
+
+        "notes": [
+          "Only use the mentioned recovery to flash"
+        ],
+
+        "downloads": [
+          {
+            "name": "karate",
+            "url": "https://www.pling.com/p/1561652/"
+          },
+          {
+            "name": "karatep",
+            "url": "https://www.pling.com/p/1561670/"
+          },
+          {
+            "name": "Recovery",
+            "url": "https://www.pling.com/p/1575367/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Descendant",
+        "version": "XI",
+        "project_name": "Community",
+        "date": "2021-02-15",
+        "android_version": "11",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/descendant.png?alt=media&token=4f425b1f-4625-413e-bf62-1a7cce3e657c",
+        "changelog": [
+          "Initial Build"
+        ],
+
+        "notes": [
+          "Only use the mentioned recovery to flash"
+        ],
+
+        "downloads": [
+          {
+            "name": "karate",
+            "url": "https://bit.ly/3qp6F83"
+          },
+          {
+            "name": "karatep",
+            "url": "https://bit.ly/3al4Cfu"
+          },
+          {
+            "name": "Recovery",
+            "url": "https://www.pling.com/p/1575367/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "EvolutionX",
+        "version": "4.7",
+        "project_name": "Unofficial",
+        "date": "2020-10-24",
+        "android_version": "10",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/EvoBanner.png?alt=media&token=2192aab0-4127-42ff-9994-d1ec46caf1bf",
+        "changelog": [
+          "Version: 4.7 Quantum",
+          "Rebased kernel to q caf tag",
+          "Fixed some heating issues"
+        ],
+
+        "notes": [
+          "Outdated recoveries will cause issues, even the official twrp"
+        ],
+
+        "downloads": [
+          {
+            "name": "karate",
+            "url": "https://bit.ly/3on8Loi"
+          },
+          {
+            "name": "karatep",
+            "url": "https://bit.ly/2HnMt5j"
+          },
+          {
+            "name": "Recovery",
+            "url": "https://www.pling.com/p/1363901/#files-panel"
+          }
+        ]
       }
     ],
 
