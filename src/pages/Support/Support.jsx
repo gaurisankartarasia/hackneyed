@@ -25,12 +25,12 @@ const supportGroups = [
     link: 'https://t.me/HackneyedUpdates',
   },
   {
-    name: 'Mido',
+    name: 'mido',
     description: 'Suport Group for Xiaomi Redmi Note 4 (Deprecated).',
     link: '#',
   },
   {
-    name: 'Karate',
+    name: 'karate/karatep',
     description: 'Suport Group for Lenovo K6 Power/Note.',
     link: 'https://t.me/k6_development',
   },

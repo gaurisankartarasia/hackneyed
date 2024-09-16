@@ -26,7 +26,7 @@ const VivekPortfolioHero = () => {
             to="/products" 
             className="inline-block bg-green-400 text-black py-2 px-6 sm:py-3 sm:px-8 rounded-full font-bold hover:bg-green-300 transition-colors duration-300 transform hover:scale-105 text-sm sm:text-base"
           >
-            View my work
+            View my works
           </Link>
 
      <SocialIconsRow/>

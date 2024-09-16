@@ -10,7 +10,7 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/3 relative"> 
             <img 
-              src="https://vivekachooz.github.io/assets/img/profile-img.jpg" 
+              src="https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/me.jpg?alt=media&token=df1bf51f-073a-4d07-b4e1-397f4573fe43" 
               alt="Vivekachooz"
               loading='lazy' 
               className="rounded-full shadow-sm transform hover:scale-105 transition-transform duration-300 w-full"
@@ -37,7 +37,7 @@ const AboutSection = () => {
                 <span className="font-semibold text-gray-100">Country:</span> India
               </div>
               <div>
-                <span className="font-semibold text-gray-100">Degree:</span> Bachelor of Arts
+                <span className="font-semibold text-gray-100">Qualification:</span> BA English graduate
               </div>
             </div>
 
@@ -46,7 +46,7 @@ const AboutSection = () => {
             </p>
 
             <p>
-              The Android community is known for aftermarket software development. Many OEMs don't provide adequate software support after product release, creating a need for Custom ROMs and Kernels. I contribute by providing aftermarket support for various devices, including Oneplus Nord CE3 Lite 5G, Realme 10 Pro 5G, Realme 9 Pro 5G, Realme 9 5G, Realme Q5, Asus Zenfone Max Pro M1, Xiaomi Redmi Note 4, and Lenovo K6 series.
+              The Android community is best known for aftermarket software development. Most of the OEMs fail to provide proper support from the software side after the release of their product. Here arises the need for Custom ROMS and Custom Kernels. I try to provide aftermarket support for various devices, including Oneplus Nord CE3 Lite 5G, Realme 10 Pro 5G, Realme 9 Pro 5G, Realme 9 5G, Realme Q5, Asus Zenfone Max Pro M1, Xiaomi Redmi Note 4, and Lenovo K6 series. Custom ROMS and kernels made by me mainly concentrates on performance without compromising battery backup. Balanced profile is used across my works. Since all the works are opensource, anyone can check and evaluate the progress through my github. Roms and kernels will be always upto date as long as google and caf releases their sources. Faster security updates is one of the other features.
             </p>
           </div>
         </div>
