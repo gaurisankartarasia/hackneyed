@@ -197,6 +197,24 @@ const ROMDetailsPage = () => {
             </ul>
           </div>
         )}
+
+        {/* sourcelink Section */}
+          <div className="p-6 md:p-8">
+            <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 flex items-center"> Link to device sources</h2>
+            <ul className="space-y-2">
+              {romDetails.sourcelink.map(sourcelink => (
+                <li key={sourcelink.name}>
+                  <a
+                    href={sourcelink.url}
+                    target='_blank'
+                    className="text-indigo-400 flex items-center  hover:text-indigo-600 transition-colors duration-300"
+                  >
+                   {sourcelink.name} &nbsp;  <RiShareBoxFill/>
+                  </a>
+                </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

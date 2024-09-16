@@ -41,6 +41,21 @@
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
         ],
 
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/Teamhackneyed/android_device_oneplus_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/Teamhackneyed/android_device_oneplus_larry/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/Teamhackneyed/android_kernel_oneplus_sm6375/tree/lineage-21"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -110,6 +125,21 @@
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
         ],
 
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_luigi/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -146,6 +176,21 @@
         "notes": [
           "Read wiki carefully to understand the requirements and how to flash properly",
           "In case if you find any bugs, report with proper logs"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_luigi/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
         ],
 
         "downloads": [
@@ -223,6 +268,21 @@
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
         ],
 
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_oscar/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -264,6 +324,21 @@
           "In case if you find any bugs, report with proper logs"
         ],
 
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_oscar/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -292,6 +367,20 @@
           "For install instructions, visit product wiki page from LineageOS website"
         ],
 
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LMODroid-Devices/android_device_realme_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LMODroid-Devices/android_device_realme_oscar/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
 
         "downloads": [
           {
@@ -322,6 +411,21 @@
           "In case if you find any bugs, report with proper logs"
         ],
 
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_asus_sdm660-common/tree/lineage-20"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_asus_X00TD/tree/lineage-20"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-20"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -345,6 +449,21 @@
         "notes": [
           "Check wiki for changelogs",
           "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LMODroid-Devices/android_device_asus_sdm660-common/tree/lineage-20"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LMODroid-Devices/android_device_asus_X00TD/tree/lineage-20"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-20"
+          }
         ],
 
         "downloads": [
