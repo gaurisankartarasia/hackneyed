@@ -223,11 +223,11 @@
         "sourcelink": [
           {
             "name": "Common tree",
-            "url": "https://github.com/LMODroid-Devices/android_device_realme_sm6375-common/tree/lineage-21"
+            "url": "https://github.com/LMODroid-Devices/device_realme_sm6375-common/tree/fourteen"
           },
           {
             "name": "Device tree",
-            "url": "https://github.com/LMODroid-Devices/android_device_realme_luigi/tree/lineage-21"
+            "url": "https://github.com/LMODroid-Devices/device_realme_luigi/tree/fourteen"
           },
           {
             "name": "kernel",
@@ -412,11 +412,11 @@
         "sourcelink": [
           {
             "name": "Common tree",
-            "url": "https://github.com/LMODroid-Devices/android_device_realme_sm6375-common/tree/lineage-21"
+            "url": "https://github.com/LMODroid-Devices/device_realme_sm6375-common/tree/fourteen"
           },
           {
             "name": "Device tree",
-            "url": "https://github.com/LMODroid-Devices/android_device_realme_oscar/tree/lineage-21"
+            "url": "https://github.com/LMODroid-Devices/device_realme_oscar/tree/fourteen"
           },
           {
             "name": "kernel",
@@ -496,11 +496,11 @@
         "sourcelink": [
           {
             "name": "Common tree",
-            "url": "https://github.com/LMODroid-Devices/android_device_asus_sdm660-common/tree/lineage-20"
+            "url": "https://github.com/LMODroid-Devices/device_asus_sdm660-common/tree/thirteen"
           },
           {
             "name": "Device tree",
-            "url": "https://github.com/LMODroid-Devices/android_device_asus_X00TD/tree/lineage-20"
+            "url": "https://github.com/LMODroid-Devices/device_asus_X00TD/tree/thirteen"
           },
           {
             "name": "kernel",
