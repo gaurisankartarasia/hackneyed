@@ -200,7 +200,7 @@ const ROMDetailsPage = () => {
 
         {/* sourcelink Section */}
           <div className="p-6 md:p-8">
-            <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 flex items-center"> Link to device sources</h2>
+            <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 flex items-center"> Links to device sources</h2>
             <ul className="space-y-2">
               {romDetails.sourcelink.map(sourcelink => (
                 <li key={sourcelink.name}>
