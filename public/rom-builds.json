@@ -205,6 +205,48 @@
         ],
       "Links":"https://wiki.lineageos.org/devices/luigi/",
       "xda":"https://xdaforums.com/t/rom-14-0-unofficial-lineageos-21-for-realme-10-pro-5g-luigi.4685514/"
+      },
+
+
+      {
+        "name": "LMODroid",
+        "version": "5.0",
+        "project_name": "Official",
+        "date": "Weekly",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "notes": [
+          "Check wiki for changelogs",
+          "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LMODroid-Devices/android_device_realme_sm6375-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LMODroid-Devices/android_device_realme_luigi/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://get.libremobileos.com/devices/luigi/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://get.libremobileos.com/changes"
+
       }
     ],
 
