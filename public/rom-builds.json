@@ -256,26 +256,24 @@
         "name": "LineageOS",
         "version": "21",
         "project_name": "Bleeding Edge",
-        "date": "2024-06-17",
+        "date": "2024-09-17",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "changelog": [
-          "Enabled CPUDDRLat boost",
-          "Fixed Wifi Display",
-          "Updated blobs from RMX3471_14.0.0.700(EX01)",
-          "Switched to common libperfmgr",
-          "Optimized auto brightness adjustment",
-          "Improved location accuracy",
-          "Fixed usb options greyed out settings",
-          "Fixed hotword causing ADSP crashes and panics",
-          "Kernel fully rebased to RMX3471_14.0.0.501(EX01)",
-          "Merged ACK 5.4.268",
-          "Merged security patches upto May 2024",
+          "Fixed conference calls with Jio sim",
+          "Fixed dynamic partition size",
+          "Enabled hwc min duration",
+          "Boost little cluster to max upon interaction",
+          "Fixed EXPENSIVE_RENDERING",
+          "Allign pinnerservice files with RUI",
+          "Merged security patches upto September 2024",
           "LineageOS source upstream"
         ],
 
         "notes": [
           "Clean flash is needed",
+          "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+          "fastboot wipe-super super_empty.img",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
           "Follow instructions carefully for flashing",
@@ -328,19 +326,23 @@
         "downloads": [
           {
             "name": "Full ROM",
-            "url": "https://dlupload.com/filedetail/267035027"
+            "url": "https://dlupload.com/filedetail/1966352602"
           },
           {
             "name": "boot",
-            "url": "https://dlupload.com/filedetail/1841352185"
+            "url": "https://dlupload.com/filedetail/734459976"
           },
           {
             "name": "dtbo",
-            "url": "https://dlupload.com/filedetail/511503401"
+            "url": "https://dlupload.com/filedetail/1781091943"
           },
           {
             "name": "vendor_boot",
-            "url": "https://dlupload.com/filedetail/49761138"
+            "url": "https://dlupload.com/filedetail/191664307"
+          },
+          {
+            "name": "super_empty",
+            "url": "https://dlupload.com/filedetail/542658093"
           },
           {
             "name": "Firmware",
