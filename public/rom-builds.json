@@ -547,6 +547,17 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "Device tree",
+            "url": "https://github.com/PixelExperience-Devices/device_asus_X00TD"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/PixelExperience-Devices/kernel_asus_sdm660/tree/thirteen-x00td"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Normal Edition",
@@ -585,6 +596,13 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-19.1"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Gapps Build",
@@ -620,6 +638,13 @@
 
         "issues": [
           "Nothing found so far."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-19.1"
+          }
         ],
 
         "downloads": [
@@ -661,6 +686,13 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_asus_sdm660"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Download",
@@ -692,6 +724,13 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_asus_sdm660"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Download",
@@ -710,6 +749,21 @@
         "notes": [
           "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
           "Bug reports are not accepted on these builds sice these are not maintained now."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_asus_sdm660-common"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_asus_X00TD"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_asus_sdm660"
+          }
         ],
 
         "downloads": [
@@ -759,6 +813,13 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8937"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
@@ -789,6 +850,13 @@
 
         "issues": [
           "Nothing found so far."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8937"
+          }
         ],
 
         "downloads": [
@@ -832,6 +900,13 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8937"
+          }
+        ],
+
         "downloads": [
           {
             "name": "karate",
@@ -866,6 +941,13 @@
 
         "issues": [
           "Nothing found so far."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8937"
+          }
         ],
 
         "downloads": [
@@ -904,6 +986,13 @@
 
         "issues": [
           "Nothing found so far."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8937"
+          }
         ],
 
         "downloads": [
