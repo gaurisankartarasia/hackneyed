@@ -199,6 +199,7 @@ const ROMDetailsPage = () => {
         )}
 
         {/* sourcelink Section */}
+        {romDetails.sourcelink && romDetails.sourcelink.length > 0 && (
           <div className="p-6 md:p-8">
             <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 flex items-center"> Links to device sources</h2>
             <ul className="space-y-2">
@@ -215,6 +216,7 @@ const ROMDetailsPage = () => {
             ))}
           </ul>
         </div>
+        )}
       </div>
     </div>
   );
