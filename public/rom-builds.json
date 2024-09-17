@@ -1031,6 +1031,13 @@
           "Nothing found so far."
         ],
 
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Xiaomi-msm8953-development/android_kernel_xiaomi_msm8953"
+          }
+        ],
+
         "downloads": [
           {
             "name": "Full ROM",
