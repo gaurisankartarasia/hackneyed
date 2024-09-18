@@ -4,11 +4,17 @@
         "name": "LineageOS",
         "version": "21",
         "project_name": "Unofficial",
-        "date": "2024-09-04",
+        "date": "2024-09-18",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "changelog": [
-          "Initial build"
+          "Switched to stock radio stack",
+          "Boosted interaction hint to reduce jitter",
+          "Fixed low mic volume",
+          "Fixed EXPENSIVE_RENDERING",
+          "Allign pinnerservice files with OOS",
+          "Merged security patches upto September 2024",
+          "LineageOS source upstream"
         ],
 
         "notes": [
@@ -16,12 +22,11 @@
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
           "Follow instructions carefully for flashing",
-          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
-          "In case if you find any bugs, report with proper logs"
+          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
         ],
 
         "issues": [
-          "Nothing found so far."
+          "Nothing found so far. Report with proper logs if you finds any"
         ],
 
         "flashingSteps": [
@@ -59,7 +64,7 @@
         "downloads": [
           {
             "name": "Full ROM",
-            "url": "https://dlupload.com/filedetail/2021777463"
+            "url": "https://dlupload.com/filedetail/970831335"
           },
           {
             "name": "boot",
