@@ -442,6 +442,92 @@
     ],
 
 
+    "kiev": [
+      {
+        "name": "Lineage OS",
+        "version": "21",
+        "project_name": "Official",
+        "date": "Weekly",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "notes": [
+          "Read wiki carefully to understand the requirements and how to flash properly",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_motorola_sm7250-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_motorola_kiev/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_motorola_sm7250/tree/lineage-21"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://download.lineageos.org/devices/kiev/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://wiki.lineageos.org/devices/kiev/"
+
+      },
+
+
+      {
+        "name": "LMODroid",
+        "version": "5.0",
+        "project_name": "Official",
+        "date": "Weekly",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "notes": [
+          "Check wiki for changelogs",
+          "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LMODroid-Devices/device_motorola_sm7250-common/tree/fourteen"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LMODroid-Devices/device_motorola_kiev/tree/fourteen"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://get.libremobileos.com/devices/kiev/builds"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://get.libremobileos.com/changes"
+
+      }
+    ],
+
+
     "X00TD": [
       {
         "name": "LineageOS",
