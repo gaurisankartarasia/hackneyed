@@ -536,6 +536,69 @@
     "X00TD": [
       {
         "name": "LineageOS",
+        "version": "21",
+        "project_name": "Unofficial",
+        "date": "2024-09-19",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "changelog": [
+          "Fixed a light hall crash",
+          "Dropeed some sf caching props that caused flickering",
+          "Fixed sensor denials",
+          "Fixed dt2w",
+          "Merged security patches upto September 2024",
+          "LineageOS source upstream"
+        ],
+
+        "notes": [
+          "This is 4.19 kernel based build.",
+          "Use the mentioned recovery to install",
+          "Do clean flash if coming from official lineageos 20",
+          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
+        ],
+
+        "issues": [
+          "Nothing found so far. Report with proper logs if you finds any."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/Teamhackneyed/android_device_asus_sdm660-common/tree/lineage-21"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/Teamhackneyed/android_device_asus_X00TD/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/Teamhackneyed/android_kernel_asus_sdm660/tree/lineage-21"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Full ROM",
+            "url": "https://dlupload.com/filedetail/1407753738"
+          },
+          {
+            "name": "boot",
+            "url": "https://dlupload.com/filedetail/1124071176"
+          },
+          {
+            "name": "recovery",
+            "url": "https://dlupload.com/filedetail/1014576291"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ]
+      },
+
+
+      {
+        "name": "LineageOS",
         "version": "20",
         "project_name": "Official",
         "date": "Weekly",
