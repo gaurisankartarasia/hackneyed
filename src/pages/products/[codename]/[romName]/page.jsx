@@ -198,6 +198,18 @@ const ROMDetailsPage = () => {
           </div>
         )}
 
+        {/* Flashing Steps If coming from previous build */}
+        {romDetails.prevbuild && romDetails.prevbuild.length > 0 && (
+          <div className="p-6 md:p-8">
+            <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">Flashing Steps If coming from previous build</h2>
+            <ul className="list-disc list-inside space-y-2 text-gray-300">
+              {romDetails.prevbuild.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* sourcelink Section */}
         {romDetails.sourcelink && romDetails.sourcelink.length > 0 && (
           <div className="p-6 md:p-8">
