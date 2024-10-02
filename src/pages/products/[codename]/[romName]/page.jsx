@@ -99,6 +99,7 @@ const ROMDetailsPage = () => {
             <h1 className="text-2xl lg:text-3xl font-semibold mb-2 text-white">{romDetails.name} {romDetails.version}  {romDetails.project_name}</h1>
             <p className="text-gray-200 font-semibold text-lg mb-4">Codename: <b>{deviceInfo.codename}</b></p>
             <p className="text-gray-300 mb-4">Device: {deviceInfo.device}</p>
+            <p className="text-gray-300 mb-4">Supported Models: {romDetails.models}</p>
             <p className="text-gray-400 mb-6">Updated: {romDetails.date}</p>
             <p className="text-gray-400 mb-6">Android Version: {romDetails.android_version}</p>
 
