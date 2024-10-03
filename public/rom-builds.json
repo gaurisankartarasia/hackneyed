@@ -572,15 +572,12 @@
         "version": "21",
         "project_name": "Unofficial",
         "models": "X00TD, X00T",
-        "date": "2024-09-19",
+        "date": "2024-10-03",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
         "changelog": [
-          "Fixed a light hall crash",
-          "Dropeed some sf caching props that caused flickering",
-          "Fixed sensor denials",
-          "Fixed dt2w",
-          "Merged security patches upto September 2024",
+          "Fixed sensors",
+          "Fixed audio issues",
           "LineageOS source upstream"
         ],
 
@@ -612,16 +609,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
-            "url": "https://dlupload.com/filedetail/1407753738"
-          },
-          {
-            "name": "boot",
-            "url": "https://dlupload.com/filedetail/1124071176"
+            "name": "ROM",
+            "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/2024100314/lineage-21-2024100314-RELEASE-X00TD.zip"
           },
           {
             "name": "recovery",
-            "url": "https://dlupload.com/filedetail/1014576291"
+            "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/2024100314/recovery.img"
           },
           {
             "name": "Gapps",
