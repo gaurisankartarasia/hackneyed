@@ -983,20 +983,20 @@
         "version": "18.1",
         "project_name": "Unofficial",
         "models": "K33",
-        "date": "2023-02-04",
+        "date": "2024-09-24",
         "android_version": "11",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
         "changelog": [
-          "Upto January security patch merged",
+          "Merged upto February 2024 security patch (Support for android 11 ended on February 2024)",
           "Added incremental OTA support",
           "Rolled back to daisy blobs",
-          "Force enabled dt2w on Trebuchet",
           "LineageOS source upstream"
         ],
 
         "notes": [
           "Incremental OTA wont work if magisk is installed",
-          "Gapps already included in rom. so no need to flash again"
+          "Gapps already included in rom. so no need to flash again",
+          "Since Google decided to drop providing security patches to Android 11, and enforcement of bpf from android 12 onwards, this marks the final lineageos build for kuntao."
         ],
 
         "issues": [
@@ -1012,12 +1012,16 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
-            "url": "https://www.pling.com/p/1981675/"
+            "name": "ROM",
+            "url": "https://github.com/Hackneyed-releases/karate/releases/download/24092024/lineage-18.1-2024092420-karate.zip"
+          },
+          {
+            "name": "Boot",
+            "url": "https://github.com/Hackneyed-releases/karate/releases/download/24092024/boot.img"
           },
           {
             "name": "Recovery",
-            "url": "https://www.pling.com/p/1575367/"
+            "url": "https://github.com/Hackneyed-releases/karate/releases/download/24092024/recovery.img"
           }
         ]
       },
@@ -1201,6 +1205,59 @@
           {
             "name": "Recovery",
             "url": "https://www.pling.com/p/1363901/#files-panel"
+          }
+        ]
+      }
+    ],
+
+
+    "kuntao": [
+      {
+        "name": "LineageOS",
+        "version": "18.1",
+        "project_name":"Unofficial",
+        "models": "P2a42",
+        "date": "2024-09-25",
+        "android_version": "11",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
+        "changelog": [
+          "Merged upto February 2024 security patch (Support for android 11 ended on February 2024)",
+          "Upstreamed to latest lineage sources",
+          "Fixed some unusual lags",
+          "Set zram to 2GB",
+          "Enabled zram-writeback",
+          "Disabled RX wakelock",
+          "Enabled power efficient workques",
+          "Other fixes and improvements"
+        ],
+
+        "notes": [
+          "Since Google decided to drop providing security patches to Android 11, and enforcement of bpf from android 12 onwards, this marks the final lineageos build for kuntao."
+        ],
+
+        "issues": [
+          "Nothing found so far."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8953"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "ROM",
+            "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/lineage-18.1-2024092505-kuntao.zip"
+          },
+          {
+            "name": "Boot",
+            "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/boot.img"
+          },
+          {
+            "name": "Recovery",
+            "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/recovery.img"
           }
         ]
       }

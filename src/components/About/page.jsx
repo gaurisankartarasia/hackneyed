@@ -46,7 +46,7 @@ const AboutSection = () => {
             </p>
 
             <p>
-              The Android community is best known for aftermarket software development. Most of the OEMs fail to provide proper support from the software side after the release of their product. Here arises the need for Custom ROMS and Custom Kernels. I try to provide aftermarket support for various devices, including Oneplus Nord CE3 Lite 5G, Realme 10 Pro 5G, Realme 9 Pro 5G, Realme 9 5G, Realme Q5, Asus Zenfone Max Pro M1, Xiaomi Redmi Note 4, and Lenovo K6 series. Custom ROMS and kernels made by me mainly concentrates on performance without compromising battery backup. Balanced profile is used across my works.
+              The Android community is best known for aftermarket software development. Most of the OEMs fail to provide proper support from the software side after the release of their product. Here arises the need for Custom ROMS and Custom Kernels. I try to provide aftermarket support for various devices, including Oneplus Nord CE3 Lite 5G, Realme 10 Pro 5G, Realme 9 Pro 5G, Realme 9 5G, Realme Q5, Asus Zenfone Max Pro M1, Xiaomi Redmi Note 4, Lenovo P2 and Lenovo K6 series. Custom ROMS and kernels made by me mainly concentrates on performance without compromising battery backup. Balanced profile is used across my works.
             </p>
           </div>
         </div>

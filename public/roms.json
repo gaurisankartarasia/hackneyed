@@ -54,6 +54,14 @@
     "device": "Lenovo K6 Power",
     "version": "ResurrectionRemix 8.5.9",
     "date": "2023-09-01"
+  },
+
+  {
+    "codename": "kuntao",
+    "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lenovo-p2_padded.png?alt=media&token=b241186a-912c-46c1-85b1-94520f8e9c19",
+    "device": "Lenovo P2",
+    "version": "LineageOS 18.1",
+    "date": "2024-09-25"
   }
 
   ]
