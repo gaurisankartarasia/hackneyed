@@ -287,6 +287,124 @@
     "oscar": [
       {
         "name": "LineageOS",
+        "version": "22.0",
+        "project_name": "Bleeding Edge",
+        "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+        "date": "2024-10-27",
+        "android_version": "15",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
+        "changelog": [
+          "Initial Android 15 build",
+          "Enabled support for latest stock firmware. (Can be flashed from stock 800. No need of fw downgrade.)",
+          "Enabled OTA support"
+        ],
+
+        "notes": [
+          "Clean flash is needed",
+          "If coming from Android 14 custom roms, then proceed to the section 'Flashing Steps If coming from previous build' and if from stock rom, then proceed to 'Flashing Steps'",
+          "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+          "fastboot wipe-super super_empty.img",
+          "Use the mentioned recovery to install",
+          "Take a backup of your data as this process will erase /data partition",
+          "Follow instructions carefully for flashing",
+          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
+        ],
+
+        "issues": [
+          "Nothing critical so far. If you find any, then report with proper logs"
+        ],
+
+        "flashingSteps": [
+          "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+          "Reboot to bootloader",
+          "Flash the downloaded image files to your device by typing:",
+          "fastboot flash boot boot.img",
+          "fastboot flash dtbo dtbo.img",
+          "fastboot flash vendor_boot vendor_boot.img",
+          "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+          "Connect device to computer",
+          "Go to Advanced > Reboot to fastboot",
+          "Now you will be in fastbootd mode. extract the downloaded firmware zip in pc",
+          "Under the firmware, there should be install.sh and install.bat files",
+          "Run install script as per your OS. (sh file if linux/ubuntu and bat if windows)",
+          "After successfull flash, reboot to recovery again",
+          "Format data (ignore if recovery complains about metadata type)",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command",
+          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+          "Format data once again after everything completed",
+          "Now you successfully flashed the rom. Boot into the rom and enjoy"
+        ],
+
+        "prevbuild": [
+          "Download all 5 files listed above (Rom, boot, dtbo, vendor_boot, super_empty)",
+          "Reboot to bootloader",
+          "Wipe super partition by typing:",
+          "fastboot wipe-super super_empty.img",
+          "Flash the downloaded image files to your device by typing:",
+          "fastboot flash boot boot.img",
+          "fastboot flash dtbo dtbo.img",
+          "fastboot flash vendor_boot vendor_boot.img",
+          "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+          "Format data (ignore if recovery complains about metadata type)",
+          "Click Advanced > Reboot to fastboot",
+          "From the fastbootd screen, Wipe super partition by typing:",
+          "fastboot wipe-super super_empty.img",
+          "Check the current slot and reboot to bootloader.",
+          "Change the slot to inactive one (If you are on slot a, then change to b) by using fastboot --set-active=a or fastboot --set-active=b",
+          "Again from the bootloader screen, Wipe super partition by typing: fastboot wipe-super super_empty.img",
+          "Reboot to recovery and check if slot is changed or not.",
+          "Click Advanced > Reboot to fastboot",
+          "From the fastbootd screen, Wipe super partition by typing:",
+          "fastboot wipe-super super_empty.img",
+          "Now, go back to recovery and format data",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command",
+          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+          "Format data once again after everything completed",
+          "Now you successfully flashed the rom. Boot into the rom and enjoy"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "ROM",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/lineage-22.0-2024102709-RELEASE-oscar.zip"
+          },
+          {
+            "name": "boot",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/boot.img"
+          },
+          {
+            "name": "dtbo",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/dtbo.img"
+          },
+          {
+            "name": "vendor_boot",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/vendor_boot.img"
+          },
+          {
+            "name": "super_empty",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/super_empty.img"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases/tag/MindTheGapps-15.0.0-arm64-20240928_150548"
+          }
+        ]
+      },
+
+
+      {
+        "name": "LineageOS",
         "version": "21",
         "project_name": "Bleeding Edge",
         "models": "RMX3471, RMX3472, RMX3474, RMX3478",
