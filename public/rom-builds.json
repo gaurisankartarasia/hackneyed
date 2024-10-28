@@ -592,6 +592,80 @@
         ],
       "Links":"https://get.libremobileos.com/changes"
 
+      },
+
+      {
+        "name": "LineageOS",
+        "version": "20",
+        "project_name": "Unofficial",
+        "models": "RMX3471",
+        "date": "2023-12-19",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
+        "changelog": [
+          "Updated blobs from RMX3471_11.C.21",
+          "Kernel upsteamed to 5.4.259",
+          "Merged December security patch",
+          "LineageOS source upstream"
+        ],
+
+        "notes": [
+          "Use the mentioned recovery to install",
+          "Take a backup of your data as this process will erase /data partition",
+          "Follow instructions carefully for flashing",
+          "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "issues": [
+          "Nothing found so far."
+        ],
+
+        "flashingSteps": [
+          "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+          "Reboot to bootloader",
+          "Flash the downloaded image files to your device by typing:",
+          "fastboot flash boot boot.img",
+          "fastboot flash dtbo dtbo.img",
+          "fastboot flash vendor_boot vendor_boot.img",
+          "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+          "Connect device to computer",
+          "Go to Advanced > Reboot to fastboot",
+          "Now you will be in fastbootd mode. extract the downloaded firmware zip in pc",
+          "Under the firmware, there should be install.sh and install.bat files",
+          "Run install script as per your OS. (sh file if linux/ubuntu and bat if windows)",
+          "After successfull flash, reboot to recovery again",
+          "Format data (ignore if recovery complains about metadata type)",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command",
+          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+          "Format data once again after everything completed",
+          "Now you successfully flashed the rom. Boot into the rom and enjoy"
+        ],
+
+        "downloads": [
+          {
+            "name": "ROM",
+            "url": "https://dlupload.com/filedetail/983511962"
+          },
+          {
+            "name": "boot",
+            "url": "https://dlupload.com/filedetail/1495662469"
+          },
+          {
+            "name": "dtbo",
+            "url": "https://dlupload.com/filedetail/598306368"
+          },
+          {
+            "name": "vendor_boot",
+            "url": "https://dlupload.com/filedetail/720510198"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ]
       }
     ],
 
