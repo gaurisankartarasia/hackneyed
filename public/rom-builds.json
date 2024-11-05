@@ -534,13 +534,14 @@
         "version": "22.0",
         "project_name": "Bleeding Edge",
         "models": "RMX3471, RMX3472, RMX3474, RMX3478",
-        "date": "2024-10-27",
+        "date": "2024-11-04",
         "android_version": "15",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
         "changelog": [
-          "Initial Android 15 build",
-          "Enabled support for latest stock firmware. (Can be flashed from stock 800. No need of fw downgrade.)",
-          "Enabled OTA support"
+          "Fixed fingerprint location overlay",
+          "Switched back to qti aidl usb hal",
+          "Fixed trust usb restrictions",
+          "LineageOS source upstream"
         ],
 
         "notes": [
@@ -621,23 +622,23 @@
         "downloads": [
           {
             "name": "ROM",
-            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/lineage-22.0-2024102709-RELEASE-oscar.zip"
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/04112024/lineage-22.0-2024110416-RELEASE-oscar.zip"
           },
           {
             "name": "boot",
-            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/boot.img"
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/04112024/boot.img"
           },
           {
             "name": "dtbo",
-            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/dtbo.img"
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/04112024/dtbo.img"
           },
           {
             "name": "vendor_boot",
-            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/vendor_boot.img"
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/04112024/vendor_boot.img"
           },
           {
             "name": "super_empty",
-            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/27102024/super_empty.img"
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/download/04112024/super_empty.img"
           },
           {
             "name": "Gapps",
