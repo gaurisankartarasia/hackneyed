@@ -11,7 +11,7 @@
         "changelog": [
           "Updated blobs and vendor patch from CPH2467_14.0.0.930(EX01)",
           "Fixed fingerprint location overlay",
-          "Fixed trus usb restrictions",
+          "Fixed trust usb restrictions",
           "Merged ASB-2024-11-05_11-5.4 to kernel",
           "Merged November 2024 security patch",
           "Fixed calculator padding issue",
@@ -252,12 +252,18 @@
         "version": "22.0",
         "project_name": "Unofficial",
         "models": "RMX3660, RMX3661",
-        "date": "2024-10-27",
+        "date": "2024-11-12",
         "android_version": "15",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
         "changelog": [
-          "Initial Android 15 build",
-          "Enabled OTA support"
+          "Updated common blobs and vendor patch from RMX3471_14.0.0.900(EX01)",
+          "Updated device blobs from RMX3660_14.0.0.1100(EX01)",
+          "Fixed fingerprint location overlay",
+          "Fixed trust usb restrictions",
+          "Merged ASB-2024-11-05_11-5.4 to kernel",
+          "Merged November 2024 security patch",
+          "Fixed calculator padding issue",
+          "LineageOS source upstream"
         ],
 
         "notes": [
@@ -338,23 +344,23 @@
         "downloads": [
           {
             "name": "ROM",
-            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/27102024/lineage-22.0-2024102714-RELEASE-luigi.zip"
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/12112024/lineage-22.0-2024111213-RELEASE-luigi.zip"
           },
           {
             "name": "boot",
-            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/27102024/boot.img"
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/12112024/boot.img"
           },
           {
             "name": "dtbo",
-            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/27102024/dtbo.img"
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/12112024/dtbo.img"
           },
           {
             "name": "vendor_boot",
-            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/27102024/vendor_boot.img"
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/12112024/vendor_boot.img"
           },
           {
             "name": "super_empty",
-            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/27102024/super_empty.img"
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/12112024/super_empty.img"
           },
           {
             "name": "Gapps",
