@@ -1567,7 +1567,7 @@
         "models": "K33",
         "date": "2024-09-24",
         "android_version": "11",
-        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
         "changelog": [
           "Merged upto February 2024 security patch (Support for android 11 ended on February 2024)",
           "Added incremental OTA support",
@@ -1801,7 +1801,7 @@
         "models": "P2a42",
         "date": "2024-09-25",
         "android_version": "11",
-        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
         "changelog": [
           "Merged upto February 2024 security patch (Support for android 11 ended on February 2024)",
           "Upstreamed to latest lineage sources",
