@@ -23,6 +23,14 @@
     "version": "LineageOS 21",
     "date": "Weekly"    
   },
+
+  {
+    "codename": "oscaro",
+    "image":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/oscaro.png?alt=media&token=683cc5ef-22ca-4d36-aa27-a22112a1e471",
+    "device": "OnePlus Nord CE 2 Lite 5G",
+    "version": "LineageOS 22.0",
+    "date": "Weekly"    
+  },
  
   {
     "codename": "kiev",
