@@ -1134,6 +1134,43 @@
         ],
       "Links":"https://get.libremobileos.com/changes"
 
+      },
+
+
+      {
+        "name": "LineageOS",
+        "version": "Official",
+        "project_name": "Archive",
+        "models": "XT2113-3, XT2113-2",
+        "date": "Based on Availability of builds",
+        "android_version": "11, 12, 13",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+        "notes": [
+          "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+          "Bug reports are not accepted on these builds since these are not maintained now."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_motorola_sm7250-common"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_motorola_kiev/tree/lineage-21"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_motorola_sm7250/tree/lineage-21"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Get it from here",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/tag/lineageos"
+          }
+        ]
       }
     ],
 
@@ -1509,7 +1546,7 @@
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
         "notes": [
           "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
-          "Bug reports are not accepted on these builds sice these are not maintained now."
+          "Bug reports are not accepted on these builds since these are not maintained now."
         ],
 
         "sourcelink": [
