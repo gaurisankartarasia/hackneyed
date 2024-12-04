@@ -520,7 +520,57 @@
           }
         ],
       "Links":"https://get.libremobileos.com/changes"
+      },
 
+
+      {
+        "name": "Revert to Stock",
+        "models": "RMX3660, RMX3661",
+        "date": "2024-12-04",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/revert.webp?alt=media&token=bce2172a-20fa-4a8f-83cb-4245d0df9cee",
+        "changelog": [
+          "Stable working method to revert back to stock rom."
+        ],
+
+        "notes": [
+          "You need to be on los 22 or los 22 based roms before proceeding",
+          "Only for installing Android 14 stock rom (RUI5)",
+          "Only use the mentioned recovery to install (Won't work with other recoveries)",
+          "Take a backup of your data as this process will erase /data partition",
+          "Follow instructions carefully for flashing"
+        ],
+
+        "issues": [
+          "Nothing found so far. Works as expected"
+        ],
+
+        "flashingSteps": [
+          "Reboot to bootloader",
+          "Type the following command to wipe /data:",
+          "fastboot -w",
+          "Download the recovery, extract and run flash",
+          "Now your device will automatically boot into recovery.",
+          "Format data (ignore if recovery complains about metadata type)",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command",
+          "adb sideload ***.zip (Replace with the filename of the stock rom)",
+          "Click first 2 yes and 1 no",
+          "Reboot to bootloader once after this step completes. (Don't reboot to system)",
+          "Download the partitions zip file, extract and run flash",
+          "Great! Stock rom has been installed in ur device successfully"
+        ],
+
+        "downloads": [
+          {
+            "name": "Recovery",
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/stock/recovery.zip"
+          },
+          {
+            "name": "Partitions",
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/download/stock/partitions.zip"
+          }
+        ]
       }
     ],
 
