@@ -203,7 +203,7 @@
         "notes": [
           "You need to be on latest los or los based roms before proceeding",
           "Only for installing Android 14 stock rom (OOS14)",
-          "Use the mentioned recovery to install",
+          "Only use the mentioned recovery to install (Won't work with other recoveries)",
           "Take a backup of your data as this process will erase /data partition",
           "Follow instructions carefully for flashing"
         ],
@@ -965,7 +965,7 @@
         "notes": [
           "You need to be on los 22 or los 22 based roms before proceeding",
           "Only for installing Android 14 stock rom (RUI5)",
-          "Use the mentioned recovery to install",
+          "Only use the mentioned recovery to install (Won't work with other recoveries)",
           "Take a backup of your data as this process will erase /data partition",
           "Follow instructions carefully for flashing"
         ],
