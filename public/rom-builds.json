@@ -17,6 +17,7 @@
         "notes": [
           "You need to be on latest stock rom before proceeding",
           "Take a backup of your data as this process might erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
         ],
@@ -26,17 +27,18 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -99,6 +101,7 @@
           "You need to be on latest stock rom before proceeding",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
         ],
@@ -108,17 +111,18 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -130,9 +134,9 @@
           "Wipe super partition by typing:",
           "fastboot wipe-super super_empty.img",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Click Advanced > Enter fastboot",
@@ -148,7 +152,7 @@
           "Now, go back to recovery and format data",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -213,6 +217,7 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Reboot to bootloader",
           "Type the following command to wipe /data:",
           "fastboot -w",
@@ -251,6 +256,10 @@
         "date": "2024-12-02",
         "android_version": "15",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Fixed paddings in dialer app",
           "Other under the hood optimizations to dt and kernel",
@@ -263,6 +272,7 @@
           "fastboot wipe-super super_empty.img",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
         ],
@@ -272,18 +282,19 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Connect device to computer",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -295,9 +306,9 @@
           "Wipe super partition by typing:",
           "fastboot wipe-super super_empty.img",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Click Advanced > Enter fastboot",
@@ -313,7 +324,7 @@
           "Now, go back to recovery and format data",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -363,6 +374,10 @@
         "date": "2024-08-05",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Initial build"
         ],
@@ -371,6 +386,7 @@
           "You need to be on latest stock rom before proceeding",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
           "In case if you find any bugs, report with proper logs"
@@ -381,17 +397,18 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -446,6 +463,10 @@
         "date": "Weekly",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "Read wiki carefully to understand the requirements and how to flash properly",
           "In case if you find any bugs, report with proper logs"
@@ -489,6 +510,10 @@
         "date": "Weekly",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "Check wiki for changelogs",
           "For install instructions, visit product wiki page from LineageOS website"
@@ -546,6 +571,7 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Reboot to bootloader",
           "Type the following command to wipe /data:",
           "fastboot -w",
@@ -584,6 +610,10 @@
         "date": "2024-12-01",
         "android_version": "15",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Fixed paddings in dialer app",
           "Updated blobs from RMX3471_14.0.0.900(EX01)",
@@ -598,6 +628,7 @@
           "fastboot wipe-super super_empty.img",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
         ],
@@ -607,18 +638,19 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Connect device to computer",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -630,9 +662,9 @@
           "Wipe super partition by typing:",
           "fastboot wipe-super super_empty.img",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Click Advanced > Enter fastboot",
@@ -648,7 +680,7 @@
           "Now, go back to recovery and format data",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -698,6 +730,10 @@
         "date": "2024-09-17",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Fixed conference calls with Jio sim",
           "Fixed dynamic partition size",
@@ -715,6 +751,7 @@
           "fastboot wipe-super super_empty.img",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
           "In case if you find any bugs, report with proper logs"
@@ -725,12 +762,13 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Connect device to computer",
           "Go to Advanced > Enter fastboot",
@@ -741,7 +779,7 @@
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -803,6 +841,10 @@
         "date": "Weekly",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "Read wiki carefully to understand the requirements and how to flash properly",
           "In case if you find any bugs, report with proper logs"
@@ -847,6 +889,10 @@
         "date": "Weekly",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "Check wiki for changelogs",
           "For install instructions, visit product wiki page from LineageOS website"
@@ -890,6 +936,10 @@
         "date": "2023-12-19",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Updated blobs from RMX3471_11.C.21",
           "Kernel upsteamed to 5.4.259",
@@ -900,6 +950,7 @@
         "notes": [
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
           "In case if you find any bugs, report with proper logs"
@@ -910,18 +961,19 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Connect device to computer",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -975,6 +1027,7 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Reboot to bootloader",
           "Type the following command to wipe /data:",
           "fastboot -w",
@@ -1023,6 +1076,7 @@
           "fastboot wipe-super super_empty.img",
           "Use the mentioned recovery to install",
           "Take a backup of your data as this process will erase /data partition",
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
           "Follow instructions carefully for flashing",
           "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
         ],
@@ -1032,17 +1086,18 @@
         ],
 
         "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
-          "fastboot flash boot boot.img",
-          "fastboot flash dtbo dtbo.img",
-          "fastboot flash vendor_boot vendor_boot.img",
+          "[command]fastboot flash boot boot.img[/command]",
+          "[command]fastboot flash dtbo dtbo.img[/command]",
+          "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
           "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
           "Format data (ignore if recovery complains about metadata type)",
           "Select apply update > install using adb",
           "Connect device to computer and type the following command",
-          "adb sideload lineage***.zip (Replace with the filename of the zip)",
+          "[command]adb sideload lineage***.zip[/command] (Replace with the filename of the zip)",
           "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
           "Format data once again after everything completed",
           "Now you successfully flashed the rom. Boot into the rom and enjoy"
@@ -1219,6 +1274,10 @@
         "date": "2024-10-03",
         "android_version": "14",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Fixed sensors",
           "Fixed audio issues",
@@ -1276,6 +1335,10 @@
         "date": "Weekly",
         "android_version": "13",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "Read wiki carefully to understand the requirements and how to flash properly",
           "In case if you find any bugs, report with proper logs"
@@ -1317,6 +1380,10 @@
         "models": "X00TD, X00T",
         "date": "Weekly",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "Check wiki for changelogs",
           "For install instructions, visit product wiki page from LineageOS website"
@@ -1360,6 +1427,10 @@
         "date": "2023-11-26",
         "android_version": "13",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe.avif?alt=media&token=9a183e6b-4022-4c49-bbff-33fb80f60f5c",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "November security patch",
           "Updated translations",
@@ -1408,6 +1479,10 @@
         "date": "2022-06-06",
         "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/aex.jpg?alt=media&token=10fe4193-3b81-4b38-8d26-a4e0ff327415",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Fixed cdfinger sensitivity",
           "Properly enabled asus_lcd_early_unblank_func for X00TD",
@@ -1453,6 +1528,10 @@
         "date": "2021-11-13",
         "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/PROTONAOSP.png?alt=media&token=db5ba754-f8a0-4892-a762-b69629bd0b70",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Initial Build"
         ],
@@ -1494,6 +1573,10 @@
         "date": "2022-07-17",
         "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/hackneyed.jpeg?alt=media&token=62722782-8b2a-4b9d-b28d-7db7e1642dab",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Cleaned up dtsi files",
           "Lowmemorykiller improvements",
@@ -1541,6 +1624,10 @@
         "date": "2022-08-15",
         "android_version": "12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/twrp.avif?alt=media&token=d63c4cd2-b962-4839-bc39-80de5d47fc5d",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "changelog": [
           "Fixed decryption in some usecases",
           "Updated dt2w node",
@@ -1579,6 +1666,10 @@
         "date": "Based on Availability of builds",
         "android_version": "8.0, 9.0, 11, 12",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
         "notes": [
           "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
           "Bug reports are not accepted on these builds since these are not maintained now."
