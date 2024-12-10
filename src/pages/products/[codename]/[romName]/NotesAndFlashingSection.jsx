@@ -46,7 +46,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
     <>
       {/* Notes Section */}
       {notes && notes.length > 0 && (
-        <div className="p-6 md:p-8">
+        <div className="pt-8 pb-8 pl-8 pr-8 md:pl-40 md:pr-40 md:pt-8 md:pb-8">
           <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">
             Notes <span className="text-red-500">*</span>
           </h2>
@@ -92,7 +92,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
 
       {/* Flashing Steps Section */}
       {flashingSteps && flashingSteps.length > 0 && (
-        <div className="p-6 md:p-8">
+        <div className="pt-8 pb-8 pl-8 pr-8 md:pl-40 md:pr-40 md:pt-8 md:pb-8">
           <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">
             Flashing Steps
           </h2>
@@ -104,7 +104,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
 
       {/* Flashing Steps If coming from previous build */}
       {prevBuildSteps && prevBuildSteps.length > 0 && (
-        <div className="p-6 md:p-8">
+        <div className="pt-8 pb-8 pl-8 pr-8 md:pl-40 md:pr-40 md:pt-8 md:pb-8">
           <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">
             Flashing Steps If coming from Android 14 custom ROMs
           </h2>

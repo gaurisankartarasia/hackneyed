@@ -377,12 +377,12 @@ const ROMDetailsPage = () => {
         
         <div className="md:flex md:space-x-8 ">
           {/* Device Image */}
-          <div className="flex-shrink-0 mr-6">
+          <div className="flex-shrink-0 mr-6 md:ml-28 md:mr-6">
            <LazyImage src={romDetails.romLogo} alt={deviceInfo.codename} />
           </div>  
 
           {/* ROM Details */}
-          <div className="p-6 md:p-8">
+          <div className="p-8 md:p-8">
             <h1 className="text-2xl lg:text-3xl font-semibold mb-2 text-white">{romDetails.name} {romDetails.version}  {romDetails.project_name}</h1>
             <p className="text-gray-200 font-semibold text-lg mb-4">Codename: <b>{deviceInfo.codename}</b></p>
             <p className="text-gray-300 mb-4">Device: {deviceInfo.device}</p>
@@ -439,7 +439,7 @@ const ROMDetailsPage = () => {
 
         {/* Warning */}
         {romDetails.warning && romDetails.warning.length > 0 && (
-          <div className="p-6 md:p-8 ">
+          <div className="p-6 md:p-8">
             <div className='bg-red-100 p-4 rounded-2xl w-full'>
             <h2 className="text-xl lg:text-2xl font-semibold text-red-800 mb-4">Warning</h2>
             <ul className="list-disc list-inside space-y-2 text-red-800">
@@ -453,7 +453,7 @@ const ROMDetailsPage = () => {
 
         {/* Changelog Section */}
         {romDetails.changelog && romDetails.changelog.length > 0 && (
-          <div className="p-6 md:p-8">
+          <div className="pt-8 pb-8 pl-8 pr-8 md:pl-40 md:pr-40 md:pt-8 md:pb-8">
             <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">Changelog</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               {romDetails.changelog.map((item, index) => (
@@ -471,7 +471,7 @@ const ROMDetailsPage = () => {
 
         {/* Known Isues Section */}
         {romDetails.issues && romDetails.issues.length > 0 && (
-          <div className="p-6 md:p-8">
+          <div className="pt-8 pb-8 pl-8 pr-8 md:pl-40 md:pr-40 md:pt-8 md:pb-8">
             <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">Known Issues</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               {romDetails.issues.map((step, index) => (
@@ -486,7 +486,7 @@ const ROMDetailsPage = () => {
 
         {/* sourcelink Section */}
         {romDetails.sourcelink && romDetails.sourcelink.length > 0 && (
-          <div className="p-6 md:p-8">
+          <div className="pt-8 pb-8 pl-8 pr-8 md:pl-40 md:pr-40 md:pt-8 md:pb-8">
             <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 flex items-center"> Links to device sources</h2>
             <ul className="space-y-2">
               {romDetails.sourcelink.map(sourcelink => (
