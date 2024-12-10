@@ -1143,6 +1143,50 @@
     "kiev": [
       {
         "name": "Lineage OS",
+        "version": "22.0",
+        "project_name": "Unofficial",
+        "models": "XT2113-3, XT2113-2",
+        "date": "2024-12-09",
+        "android_version": "15",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+        "notes": [
+          "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+          "Read official lineageos wiki carefully to understand the requirements and how to flash properly",
+          "In case if you find any bugs, report with proper logs",
+          "OTA is enabled. So future updates will be available through inbuilt updater",
+          "Gapps are already preincluded. So dont flash gapps."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_motorola_sm7250-common/tree/lineage-22.0"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_motorola_kiev/tree/lineage-22.0"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_motorola_sm7250/tree/lineage-22.0"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "ROM",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/download/09122024/lineage-22.0-2024120920-RELEASE-kiev.zip"
+          },
+          {
+            "name": "recovery",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/download/09122024/recovery.img"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Lineage OS",
         "version": "21",
         "project_name": "Official",
         "models": "XT2113-3, XT2113-2",
