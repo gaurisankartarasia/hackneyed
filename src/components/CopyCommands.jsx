@@ -52,7 +52,7 @@ const CopyableCommand = ({ command }) => {
   };
 
   return (
-    <div className="w-fit bg-gray-800 rounded-2xl text-gray-300 p-4 my-2 flex items-center justify-between relative">
+    <div className="w-full bg-gray-800 rounded-2xl text-gray-300 p-4 my-2 flex items-center justify-between relative">
       <code className="overflow-x-auto text-sm">{command}</code>
       <button
         onClick={copyToClipboard}

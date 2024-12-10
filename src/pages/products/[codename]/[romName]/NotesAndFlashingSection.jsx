@@ -26,7 +26,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
 
         return (
           <div key={index} className="mb-2">
-            <div className="bg-red-100 text-red-800 p-4 rounded-2xl mb-2">
+            <div className="bg-red-100 text-red-800 p-4 rounded-2xl mb-2 w-full">
               <strong>Warning: </strong>
               {warningText}
             </div>
@@ -70,7 +70,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
                 const warningText = warningMatch[1];
                 const textAfterWarning = item.replace(warningMatch[0], "");
                 return (
-                  <div key={index} className="mb-2 w-fit">
+                  <div key={index} className="mb-2 w-full">
                     <div className="bg-red-100 text-red-800 p-4 rounded-2xl mb-2">
                       <strong>Warning: </strong>
                       {warningText}
@@ -96,7 +96,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
           <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">
             Flashing Steps
           </h2>
-          <ul className="list-disc list-inside space-y-2 w-fit">
+          <ul className="list-disc list-inside space-y-2 w-full">
             {renderStepsWithCommandsAndWarnings(flashingSteps)}
           </ul>
         </div>
@@ -108,7 +108,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
           <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4">
             Flashing Steps If coming from Android 14 custom ROMs
           </h2>
-          <ul className="list-disc list-inside space-y-2 w-fit">
+          <ul className="list-disc list-inside space-y-2 w-full">
             {renderStepsWithCommandsAndWarnings(prevBuildSteps)}
           </ul>
         </div>
