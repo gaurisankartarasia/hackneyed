@@ -440,7 +440,7 @@ const ROMDetailsPage = () => {
         {/* Warning */}
         {romDetails.warning && romDetails.warning.length > 0 && (
           <div className="p-6 md:p-8 ">
-            <div className='bg-red-200 p-4 rounded-2xl'>
+            <div className='bg-red-100 p-4 rounded-2xl'>
             <h2 className="text-xl lg:text-2xl font-semibold text-red-800 mb-4">Warning</h2>
             <ul className="list-disc list-inside space-y-2 text-red-800">
               {romDetails.warning.map((item, index) => (

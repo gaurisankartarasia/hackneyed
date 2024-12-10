@@ -26,7 +26,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
 
         return (
           <div key={index} className="mb-2">
-            <div className="bg-red-200 text-red-800 p-4 rounded-2xl mb-2">
+            <div className="bg-red-100 text-red-800 p-4 rounded-2xl mb-2">
               <strong>Warning: </strong>
               {warningText}
             </div>
@@ -71,7 +71,7 @@ const ROMSections = ({ notes, flashingSteps, prevBuildSteps }) => {
                 const textAfterWarning = item.replace(warningMatch[0], "");
                 return (
                   <div key={index} className="mb-2 w-fit">
-                    <div className="bg-red-200 text-red-800 p-4 rounded-2xl mb-2">
+                    <div className="bg-red-100 text-red-800 p-4 rounded-2xl mb-2">
                       <strong>Warning: </strong>
                       {warningText}
                     </div>
