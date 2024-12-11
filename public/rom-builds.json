@@ -1149,12 +1149,35 @@
         "date": "2024-12-09",
         "android_version": "15",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+        "changelog": [
+          "Initial build"
+        ],
+
         "notes": [
           "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
-          "Read official lineageos wiki carefully to understand the requirements and how to flash properly",
+          "Read official lineageos wiki carefully to understand the requirements and how to unlock bootloader",
           "In case if you find any bugs, report with proper logs",
-          "OTA is enabled. So future updates will be available through inbuilt updater",
-          "Gapps are already preincluded. So dont flash gapps."
+          "OTA is enabled. So future updates will be available through inbuilt updater."
+        ],
+
+        "issues": [
+          "Nothing critical so far. If you find any, then report with proper logs"
+        ],
+
+        "flashingSteps": [
+          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "Download Rom and recovery files",
+          "Reboot to bootloader",
+          "Flash the downloaded recovery image to your device by typing:",
+          "[command]fastboot flash recovery recovery.img[/command]",
+          "After flashing recovery, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+          "Format data",
+          "Select apply update > install using adb",
+          "Connect device to computer and type the following command by replacing with the filename of the zip",
+          "[command]adb sideload lineage***.zip[/command]",
+          "[warning]Do not format data after flashing rom since android 15 enforces FRP lock.[/warning]",
+          "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+          "Now you successfully flashed the rom. Boot into the rom and enjoy."
         ],
 
         "sourcelink": [
@@ -1175,11 +1198,11 @@
         "downloads": [
           {
             "name": "ROM",
-            "url": "https://github.com/Hackneyed-releases/kiev/releases/download/09122024/lineage-22.0-2024120920-RELEASE-kiev.zip"
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/download/10122024/lineage-22.0-2024121016-RELEASE-kiev.zip"
           },
           {
             "name": "recovery",
-            "url": "https://github.com/Hackneyed-releases/kiev/releases/download/09122024/recovery.img"
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/download/10122024/recovery.img"
           }
         ]
       },
