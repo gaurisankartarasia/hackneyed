@@ -27,7 +27,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -111,7 +111,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -217,7 +217,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Reboot to bootloader",
           "Type the following command to wipe /data:",
           "fastboot -w",
@@ -282,7 +282,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -397,7 +397,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -571,7 +571,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Reboot to bootloader",
           "Type the following command to wipe /data:",
           "fastboot -w",
@@ -638,7 +638,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -762,7 +762,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -961,7 +961,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -1027,7 +1027,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Reboot to bootloader",
           "Type the following command to wipe /data:",
           "fastboot -w",
@@ -1086,7 +1086,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
           "Reboot to bootloader",
           "Flash the downloaded image files to your device by typing:",
@@ -1165,7 +1165,7 @@
         ],
 
         "flashingSteps": [
-          "[warning]The provided instructions are for flashing the build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
+          "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails![/warning]",
           "Download Rom and recovery files",
           "Reboot to bootloader",
           "Flash the downloaded recovery image to your device by typing:",
