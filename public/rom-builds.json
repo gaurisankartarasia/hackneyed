@@ -74,7 +74,7 @@
           },
           {
             "name": "Gapps",
-            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases/download/MindTheGapps-15.0.0-arm64-20240928_150548/MindTheGapps-15.0.0-arm64-20240928_150548.zip"
+            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases"
           }
         ]
       },
@@ -360,7 +360,7 @@
           },
           {
             "name": "Gapps",
-            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases/tag/MindTheGapps-15.0.0-arm64-20240928_150548"
+            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases"
           }
         ]
       },
@@ -489,8 +489,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://download.lineageos.org/devices/luigi/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/mirror-21"
           },
           {
             "name": "Gapps",
@@ -504,7 +508,7 @@
 
       {
         "name": "LMODroid",
-        "version": "5.0",
+        "version": "5",
         "project_name": "Official",
         "models": "RMX3660, RMX3661",
         "date": "Weekly",
@@ -536,7 +540,7 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "ROM",
             "url": "https://get.libremobileos.com/devices/luigi/builds"
           },
           {
@@ -716,7 +720,7 @@
           },
           {
             "name": "Gapps",
-            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases/tag/MindTheGapps-15.0.0-arm64-20240928_150548"
+            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases"
           }
         ]
       },
@@ -867,8 +871,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://download.lineageos.org/devices/oscar/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/mirror-21"
           },
           {
             "name": "Gapps",
@@ -883,7 +891,7 @@
 
       {
         "name": "LMODroid",
-        "version": "5.0",
+        "version": "5",
         "project_name": "Official",
         "models": "RMX3471, RMX3472, RMX3474, RMX3478",
         "date": "Weekly",
@@ -915,8 +923,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://get.libremobileos.com/devices/oscar/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/lmo5-mirror"
           },
           {
             "name": "Gapps",
@@ -1133,7 +1145,7 @@
           },
           {
             "name": "Gapps",
-            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases/tag/MindTheGapps-15.0.0-arm64-20240928_150548"
+            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases"
           }
         ]
       }
@@ -1203,6 +1215,10 @@
           {
             "name": "recovery",
             "url": "https://github.com/Hackneyed-releases/kiev/releases/download/10122024/recovery.img"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases"
           }
         ]
       },
@@ -1238,8 +1254,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://download.lineageos.org/devices/kiev/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/tag/mirror21"
           },
           {
             "name": "Gapps",
@@ -1253,7 +1273,7 @@
 
       {
         "name": "LMODroid",
-        "version": "5.0",
+        "version": "5",
         "project_name": "Official",
         "models": "XT2113-3, XT2113-2",
         "date": "Weekly",
@@ -1275,14 +1295,104 @@
           },
           {
             "name": "kernel",
-            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+            "url": "https://github.com/LineageOS/android_kernel_motorola_sm7250/tree/lineage-21"
           }
         ],
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://get.libremobileos.com/devices/kiev/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/tag/lmo5"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://get.libremobileos.com/changes"
+
+      },
+
+
+      {
+        "name": "LMODroid",
+        "version": "4",
+        "project_name": "Official",
+        "models": "XT2113-3, XT2113-2",
+        "date": "Weekly",
+        "android_version": "13",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "notes": [
+          "Check wiki for changelogs",
+          "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LMODroid-Devices/device_motorola_kiev/tree/thirteen"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_motorola_sm7250/tree/lineage-20"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Official website",
+            "url": "https://get.libremobileos.com/devices/kiev/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/tag/lmo4"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://get.libremobileos.com/changes"
+
+      },
+
+
+      {
+        "name": "LMODroid",
+        "version": "3",
+        "project_name": "Official",
+        "models": "XT2113-3, XT2113-2",
+        "date": "Weekly",
+        "android_version": "12",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+        "notes": [
+          "Check wiki for changelogs",
+          "For install instructions, visit product wiki page from LineageOS website"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LMODroid-Devices/device_motorola_kiev/tree/twelve"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_motorola_sm7250/tree/lineage-19.1"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Official website",
+            "url": "https://get.libremobileos.com/devices/kiev/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/kiev/releases/tag/lmo3"
           },
           {
             "name": "Gapps",
@@ -1428,8 +1538,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://download.lineageos.org/devices/X00TD/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/miirror20"
           },
           {
             "name": "Gapps",
@@ -1442,7 +1556,7 @@
 
       {
         "name": "LMODroid",
-        "version": "4.2",
+        "version": "4",
         "project_name": "Official",
         "models": "X00TD, X00T",
         "date": "Weekly",
@@ -1545,7 +1659,7 @@
 
       {
         "name": "LMODroid",
-        "version": "3.3",
+        "version": "3",
         "project_name": "Official",
         "models": "X00TD, X00T",
         "date": "Weekly",
@@ -1815,20 +1929,8 @@
 
         "downloads": [
           {
-            "name": "LineageOS 15.1",
-            "url": "https://dlupload.com/filedetail/1321083508"
-          },
-          {
-            "name": "LineageOS 16.0",
-            "url": "https://dlupload.com/filedetail/912464900"
-          },
-          {
-            "name": "LineageOS 18.1",
-            "url": "https://dlupload.com/filedetail/1184801432"
-          },
-          {
-            "name": "LineageOS 19.1",
-            "url": "https://dlupload.com/filedetail/654384465"
+            "name": "Get it from here",
+            "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/los_archive"
           }
         ]
       }
