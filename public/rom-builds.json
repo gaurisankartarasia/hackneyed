@@ -1446,6 +1446,7 @@
         "project_name": "Official",
         "models": "X00TD, X00T",
         "date": "Weekly",
+        "android_version": "13",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
         "warning": [
           "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
@@ -1473,8 +1474,12 @@
 
         "downloads": [
           {
-            "name": "Full ROM",
+            "name": "Official website",
             "url": "https://get.libremobileos.com/devices/X00TD/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/lmo4"
           },
           {
             "name": "Gapps",
