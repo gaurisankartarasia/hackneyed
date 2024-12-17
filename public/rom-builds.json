@@ -1075,15 +1075,24 @@
         "version": "22.0",
         "project_name": "Unofficial",
         "models": "CPH2381, CPH2409",
-        "date": "2024-11-16",
+        "date": "2024-12-16",
         "android_version": "15",
         "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
         "changelog": [
-          "Initial build"
+          "Fixed paddings in dialer app",
+          "Updated common blobs from CPH2467_14.0.0.1320(EX01)",
+          "Updated device blobs and fingerprint from CPH2381_14.0.0.930(EX01)",
+          "Tuned powerhint",
+          "Cleaned up sepolicies",
+          "Fixed outdoor brightness bug",
+          "Improved model name setting logic",
+          "Merged tag ASB-2024-11-05_11-5.4 to kernel",
+          "Included new music (twelve) and pdf reader (camelot) by lineageos",
+          "LineageOS source upstream"
         ],
 
         "notes": [
-          "Clean flash is needed",
+          "Clean flash is needed if coming from stock or other roms",
           "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
           "fastboot wipe-super super_empty.img",
           "Use the mentioned recovery to install",
@@ -1125,23 +1134,23 @@
         "downloads": [
           {
             "name": "ROM",
-            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/15112024/lineage-22.0-2024111519-RELEASE-oscaro.zip"
+            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/16122024/lineage-22.0-2024121616-RELEASE-oscaro.zip"
           },
           {
             "name": "boot",
-            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/15112024/boot.img"
+            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/16122024/boot.img"
           },
           {
             "name": "dtbo",
-            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/15112024/dtbo.img"
+            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/16122024/dtbo.img"
           },
           {
             "name": "vendor_boot",
-            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/15112024/vendor_boot.img"
+            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/16122024/vendor_boot.img"
           },
           {
             "name": "super_empty",
-            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/15112024/super_empty.img"
+            "url": "https://github.com/Hackneyed-releases/oscaro/releases/download/16122024/super_empty.img"
           },
           {
             "name": "Gapps",
