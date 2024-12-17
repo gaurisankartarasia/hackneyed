@@ -87,7 +87,7 @@
         "models": "CPH2467, CPH2465",
         "date": "2024-10-02",
         "android_version": "14",
-        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
         "changelog": [
           "Fixed super partition size and alligned with stock",
           "Switched to common partition reserved sizes",
@@ -373,7 +373,7 @@
         "models": "RMX3660, RMX3661",
         "date": "2024-08-05",
         "android_version": "14",
-        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
         "warning": [
           "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
         ],
@@ -733,7 +733,7 @@
         "models": "RMX3471, RMX3472, RMX3474, RMX3478",
         "date": "2024-09-17",
         "android_version": "14",
-        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
         "warning": [
           "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
         ],
@@ -1459,7 +1459,7 @@
         "models": "X00TD, X00T",
         "date": "2024-10-03",
         "android_version": "14",
-        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
         "warning": [
           "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
         ],
