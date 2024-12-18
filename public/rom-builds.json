@@ -1965,7 +1965,7 @@
         "notes": [
           "Incremental OTA wont work if magisk is installed",
           "Gapps already included in rom. so no need to flash again",
-          "Since Google decided to drop providing security patches to Android 11, and enforcement of bpf from android 12 onwards, this marks the final lineageos build for kuntao."
+          "Since Google decided to drop providing security patches to Android 11, and enforcement of bpf from android 12 onwards, this marks the final lineageos build for karate."
         ],
 
         "issues": [
