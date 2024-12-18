@@ -1989,6 +1989,10 @@
           {
             "name": "Recovery",
             "url": "https://github.com/Hackneyed-releases/karate/releases/download/24092024/recovery.img"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://github.com/MindTheGapps/11.0.0-arm64/releases"
           }
         ]
       },
@@ -2225,6 +2229,10 @@
           {
             "name": "Recovery",
             "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/recovery.img"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://github.com/MindTheGapps/11.0.0-arm64/releases"
           }
         ]
       }
