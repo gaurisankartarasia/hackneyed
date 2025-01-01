@@ -651,6 +651,43 @@
             "url": "https://github.com/Hackneyed-releases/luigi/releases/download/stock/partitions.zip"
           }
         ]
+      },
+
+
+      {
+        "name": "LineageOS",
+        "version": "Official",
+        "project_name": "Archive",
+        "models": "RMX3660, RMX3661",
+        "date": "Based on Availability of builds",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+        "notes": [
+          "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+          "Bug reports are not accepted on these builds since these are not maintained now."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_luigi"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Get it from here",
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/lineageos"
+          }
+        ]
       }
     ],
 
@@ -1138,6 +1175,43 @@
           {
             "name": "Partitions",
             "url": "https://github.com/Hackneyed-releases/oscar/releases/download/stock/partitions.zip"
+          }
+        ]
+      },
+
+
+      {
+        "name": "LineageOS",
+        "version": "Official",
+        "project_name": "Archive",
+        "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+        "date": "Based on Availability of builds",
+        "android_version": "14",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+        "notes": [
+          "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+          "Bug reports are not accepted on these builds since these are not maintained now."
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_oscar"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Get it from here",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/lineageos"
           }
         ]
       }
