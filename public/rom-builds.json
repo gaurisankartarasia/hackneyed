@@ -249,8 +249,58 @@
 
   "luigi": [
       {
+        "name": "Lineage OS",
+        "version": "22",
+        "project_name": "Official",
+        "models": "RMX3660, RMX3661",
+        "date": "Weekly",
+        "android_version": "5",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22_black.png?alt=media&token=7b063878-397c-49da-acb1-f020c3abd6e4",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
+        "notes": [
+          "Read wiki carefully to understand the requirements and how to flash properly",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-22.1"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_luigi/tree/lineage-22.1"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Official website",
+            "url": "https://download.lineageos.org/devices/luigi/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/mirror-22"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://wiki.lineageos.org/devices/luigi/"
+      },
+
+
+      {
         "name": "LineageOS",
-        "version": "22.0",
+        "version": "22",
         "project_name": "Unofficial",
         "models": "RMX3660, RMX3661",
         "date": "2024-12-02",
@@ -607,8 +657,59 @@
 
     "oscar": [
       {
+        "name": "Lineage OS",
+        "version": "22",
+        "project_name": "Official",
+        "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+        "date": "Weekly",
+        "android_version": "15",
+        "romLogo":"https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22_black.png?alt=media&token=7b063878-397c-49da-acb1-f020c3abd6e4",
+        "warning": [
+          "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+        ],
+
+        "notes": [
+          "Read wiki carefully to understand the requirements and how to flash properly",
+          "In case if you find any bugs, report with proper logs"
+        ],
+
+        "sourcelink": [
+          {
+            "name": "Common tree",
+            "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-22.1"
+          },
+          {
+            "name": "Device tree",
+            "url": "https://github.com/LineageOS/android_device_realme_oscar/tree/lineage-22.1"
+          },
+          {
+            "name": "kernel",
+            "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
+          }
+        ],
+
+        "downloads": [
+          {
+            "name": "Official website",
+            "url": "https://download.lineageos.org/devices/oscar/builds"
+          },
+          {
+            "name": "Mirror link",
+            "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/mirror-22"
+          },
+          {
+            "name": "Gapps",
+            "url": "https://wiki.lineageos.org/gapps/"
+          }
+        ],
+      "Links":"https://wiki.lineageos.org/devices/oscar/"
+
+      },
+
+
+      {
         "name": "LineageOS",
-        "version": "22.0",
+        "version": "22",
         "project_name": "Bleeding Edge",
         "models": "RMX3471, RMX3472, RMX3474, RMX3478",
         "date": "2024-12-01",
