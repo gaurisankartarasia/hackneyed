@@ -1,13 +1,16 @@
 {
-  "larry": [
+  "luigi": [
     {
       "name": "LineageOS",
       "version": "22",
       "project_name": "Official",
-      "models": "CPH2467, CPH2465, CPH2513",
+      "models": "RMX3660, RMX3661",
       "date": "Weekly",
-      "android_version": "15",
+      "android_version": "5",
       "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22_black.png?alt=media&token=7b063878-397c-49da-acb1-f020c3abd6e4",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
       "notes": [
         "Read wiki carefully to understand the requirements and how to flash properly",
         "In case if you find any bugs, report with proper logs",
@@ -16,41 +19,44 @@
       "sourcelink": [
         {
           "name": "Common tree",
-          "url": "https://github.com/LineageOS/android_device_oneplus_sm6375-common/tree/lineage-22.1"
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-22.1"
         },
         {
           "name": "Device tree",
-          "url": "https://github.com/LineageOS/android_device_oneplus_larry/tree/lineage-22.1"
+          "url": "https://github.com/LineageOS/android_device_realme_luigi/tree/lineage-22.1"
         },
         {
           "name": "kernel",
-          "url": "https://github.com/LineageOS/android_kernel_oneplus_sm6375/tree/lineage-22.1"
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
         }
       ],
       "downloads": [
         {
           "name": "Official website",
-          "url": "https://download.lineageos.org/devices/larry/builds"
+          "url": "https://download.lineageos.org/devices/luigi/builds"
         },
         {
           "name": "Mirror link",
-          "url": "https://github.com/Hackneyed-releases/larry/releases/tag/mirror-22"
+          "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/mirror-22"
         },
         {
           "name": "Gapps",
           "url": "https://wiki.lineageos.org/gapps/"
         }
       ],
-      "Links": "https://wiki.lineageos.org/devices/larry/"
+      "Links": "https://wiki.lineageos.org/devices/luigi/"
     },
     {
       "name": "LineageOS",
       "version": "22",
       "project_name": "Unofficial",
-      "models": "CPH2467, CPH2465, CPH2513",
+      "models": "RMX3660, RMX3661",
       "date": "2025-03-12",
       "android_version": "15",
       "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
       "changelog": [
         "Brought back Faceunlock",
         "Updated Integrity fp from caiman_beta backlava BP22",
@@ -58,7 +64,7 @@
         "Enabled wifi aware support",
         "Switchd to OSS Audio hal",
         "Cleaned up media configs",
-        "Updated blobs from from CPH2467_14.0.0.1330(EX01)",
+        "Updated blobs from from RMX3471_14.0.0.1900(EX01) and RMX3660_14.0.0.1900(EX01)",
         "Removed unused media_codecs and profiles xmls",
         "Enabled UFFD support",
         "Merged LA.UM.9.14.r1-25800-LAHAINA.QSSI15.0 to kernel",
@@ -87,7 +93,7 @@
         "Follow instructions carefully for flashing"
       ],
       "issues": [
-        "Nothing found so far. Report with proper logs if you finds any"
+        "Nothing critical so far. If you find any, then report with proper logs"
       ],
       "flashingSteps": [
         "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
@@ -98,6 +104,7 @@
         "[command]fastboot flash dtbo dtbo.img[/command]",
         "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
         "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Connect device to computer",
         "Format data (ignore if recovery complains about metadata type)",
         "Select apply update > install using adb",
         "Connect device to computer and type the following command by replacing with the filename of the zip",
@@ -109,33 +116,33 @@
       "sourcelink": [
         {
           "name": "kernel",
-          "url": "https://github.com/LineageOS/android_kernel_oneplus_sm6375/tree/lineage-22.1"
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
         }
       ],
       "downloads": [
         {
           "name": "ROM",
-          "url": "https://dl.surf/explore/file/cb563f3d"
+          "url": "https://dl.surf/explore/file/ac0282c6"
         },
         {
           "name": "boot",
-          "url": "https://dl.surf/explore/file/a2d41da8"
+          "url": "https://dl.surf/explore/file/b21620ed"
         },
         {
           "name": "dtbo",
-          "url": "https://dl.surf/explore/file/965b4eed"
+          "url": "https://dl.surf/explore/file/c477b783"
         },
         {
           "name": "vendor_boot",
-          "url": "https://dl.surf/explore/file/fe9e64f7"
+          "url": "https://dl.surf/explore/file/5c71648e"
         },
         {
           "name": "super_empty",
-          "url": "https://dl.surf/explore/file/aad79750"
+          "url": "https://dl.surf/explore/file/3d9c96c1"
         },
         {
           "name": "vbmeta",
-          "url": "https://dl.surf/explore/file/fb654946"
+          "url": "https://dl.surf/explore/file/22e5e6b6"
         }
       ]
     },
@@ -143,7 +150,7 @@
       "name": "PixelOS",
       "version": "15",
       "project_name": "Unofficial",
-      "models": "CPH2467, CPH2465, CPH2513",
+      "models": "RMX3660, RMX3661",
       "date": "2025-02-13",
       "android_version": "15",
       "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pixelos-15.jpg?alt=media&token=f3e2c3fa-de43-464c-8230-a4c0ad830492",
@@ -154,9 +161,12 @@
         "Initial build"
       ],
       "notes": [
-        "You need to be on latest android 14 stock rom before proceeding",
+        "If coming from Android 14 custom roms, then you need to wipe super partition using super_empty.img",
+        "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+        "[command]fastboot wipe-super super_empty.img[/command]",
         "Use the mentioned recovery to install",
-        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest android 14 firmware version. Otherwise flash the latest android 14 stock firmware before continuing further[/warning]",
         "Follow instructions carefully for flashing"
       ],
       "issues": [
@@ -183,100 +193,25 @@
       "sourcelink": [
         {
           "name": "kernel",
-          "url": "https://github.com/LineageOS/android_kernel_oneplus_sm6375/tree/lineage-22.1"
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
         }
       ],
       "downloads": [
         {
           "name": "ROM",
-          "url": "https://dl.surf/explore/file/df508bd1"
+          "url": "https://dl.surf/explore/file/305132d8"
         },
         {
           "name": "boot",
-          "url": "https://dl.surf/explore/file/4e4d3d06"
+          "url": "https://dl.surf/explore/file/7a15fca8"
         },
         {
           "name": "dtbo",
-          "url": "https://dl.surf/explore/file/7a3661e2"
+          "url": "https://dl.surf/explore/file/fd513f60"
         },
         {
           "name": "vendor_boot",
-          "url": "https://dl.surf/explore/file/3ba1803a"
-        }
-      ]
-    },
-    {
-      "name": "CrDroid",
-      "version": "11",
-      "project_name": "Unofficial",
-      "models": "CPH2467, CPH2465, CPH2513",
-      "date": "2025-02-21",
-      "android_version": "15",
-      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/crdroid.png?alt=media&token=875450df-7bff-49ca-a2df-f0f7f50a3ff4",
-      "changelog": [
-        "Updated from CPH2467_14.0.0.1330(EX01)",
-        "Updated vendor security patch to 05-12-2024",
-        "Fixed loudspeaker volume control while in call",
-        "Switched to aidl bootctrl and sensors hals",
-        "Merged February 2025 Security patch",
-        "Merged ASB-2025-02-05_11-5.4 to kernel",
-        "Fixed empty image in styles and wallpaper app",
-        "Droped matlog app",
-        "CrDroid source upstream"
-      ],
-      "notes": [
-        "You need to be on latest android 14 stock rom before proceeding",
-        "Take a backup of your data as this process might erase /data partition",
-        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
-        "Follow instructions carefully for flashing",
-        "[warning]Gapps already included. Dont flash it again.[/warning]"
-      ],
-      "issues": [
-        "Nothing found so far. Report with proper logs if you finds any"
-      ],
-      "flashingSteps": [
-        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
-        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
-        "Reboot to bootloader",
-        "Flash the downloaded image files to your device by typing:",
-        "[command]fastboot flash boot boot.img[/command]",
-        "[command]fastboot flash dtbo dtbo.img[/command]",
-        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
-        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
-        "Format data (ignore if recovery complains about metadata type)",
-        "Select apply update > install using adb",
-        "Connect device to computer and type the following command by replacing with the filename of the zip",
-        "[command]adb sideload CrDroidAndroid***.zip[/command]",
-        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
-        "Format data once again after everything completed",
-        "Now you successfully flashed the rom. Boot into the rom and enjoy"
-      ],
-      "sourcelink": [
-        {
-          "name": "kernel",
-          "url": "https://github.com/LineageOS/android_kernel_oneplus_sm6375/tree/lineage-22.1"
-        }
-      ],
-      "downloads": [
-        {
-          "name": "ROM",
-          "url": "https://dl.surf/explore/file/e55c2e7d"
-        },
-        {
-          "name": "boot",
-          "url": "https://dl.surf/explore/file/506f9f41"
-        },
-        {
-          "name": "dtbo",
-          "url": "https://dl.surf/explore/file/464318dd"
-        },
-        {
-          "name": "vendor_boot",
-          "url": "https://dl.surf/explore/file/68ee3e08"
-        },
-        {
-          "name": "super_empty",
-          "url": "https://dl.surf/explore/file/7f54627a"
+          "url": "https://dl.surf/explore/file/416b036f"
         }
       ]
     },
@@ -284,28 +219,27 @@
       "name": "LineageOS",
       "version": "21",
       "project_name": "Unofficial",
-      "models": "CPH2467, CPH2465",
-      "date": "2024-10-02",
+      "models": "RMX3660, RMX3661",
+      "date": "2024-08-05",
       "android_version": "14",
       "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
       "changelog": [
-        "Fixed super partition size and alligned with stock",
-        "Switched to common partition reserved sizes",
-        "Fixed conference call with JIO sim",
-        "Switched to sf durations",
-        "Optimized powerhint for better experience",
-        "LineageOS source upstream"
+        "Initial build"
       ],
       "notes": [
-        "You need to be on latest android 14 stock rom before proceeding",
+        "You need to be on latest stock rom before proceeding",
         "Use the mentioned recovery to install",
         "Take a backup of your data as this process will erase /data partition",
-        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest android 14 firmware version. Otherwise flash the latest android 14 stock firmware before continuing further[/warning]",
         "Follow instructions carefully for flashing",
-        "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
+        "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
+        "In case if you find any bugs, report with proper logs"
       ],
       "issues": [
-        "Nothing found so far. Report with proper logs if you finds any"
+        "Nothing found so far."
       ],
       "flashingSteps": [
         "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
@@ -324,80 +258,149 @@
         "Format data once again after everything completed",
         "Now you successfully flashed the rom. Boot into the rom and enjoy"
       ],
-      "prevbuild": [
-        "Download all 5 files listed above (Rom, boot, dtbo, vendor_boot, super_empty)",
-        "Reboot to bootloader",
-        "Wipe super partition by typing:",
-        "fastboot wipe-super super_empty.img",
-        "Flash the downloaded image files to your device by typing:",
-        "[command]fastboot flash boot boot.img[/command]",
-        "[command]fastboot flash dtbo dtbo.img[/command]",
-        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
-        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
-        "Format data (ignore if recovery complains about metadata type)",
-        "Click Advanced > Enter fastboot",
-        "From the fastbootd screen, Wipe super partition by typing:",
-        "fastboot wipe-super super_empty.img",
-        "Check the current slot and reboot to bootloader.",
-        "Change the slot to inactive one (If you are on slot a, then change to b) by using fastboot --set-active=a or fastboot --set-active=b",
-        "Again from the bootloader screen, Wipe super partition by typing: fastboot wipe-super super_empty.img",
-        "Reboot to recovery and check if slot is changed or not.",
-        "Click Advanced > Enter fastboot",
-        "From the fastbootd screen, Wipe super partition by typing:",
-        "fastboot wipe-super super_empty.img",
-        "Now, go back to recovery and format data",
-        "Select apply update > install using adb",
-        "Connect device to computer and type the following command by replacing with the filename of the zip",
-        "[command]adb sideload lineage***.zip[/command]",
-        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
-        "Format data once again after everything completed",
-        "Now you successfully flashed the rom. Boot into the rom and enjoy"
-      ],
       "sourcelink": [
         {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_luigi/tree/lineage-21"
+        },
+        {
           "name": "kernel",
-          "url": "https://github.com/Teamhackneyed/android_kernel_oneplus_sm6375/tree/lineage-21"
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
         }
       ],
       "downloads": [
         {
-          "name": "ROM",
-          "url": "https://github.com/Hackneyed-releases/releases/releases/download/02102024/lineage-21-2024100213-RELEASE-larry.zip"
+          "name": "Full ROM",
+          "url": "https://ota.hackneyed.workers.dev/0:/luigi/lineage-21-2024080419-RELEASE-luigi.zip"
         },
         {
           "name": "boot",
-          "url": "https://github.com/Hackneyed-releases/releases/releases/download/02102024/boot.img"
+          "url": "https://ota.hackneyed.workers.dev/0:/luigi/boot.img"
         },
         {
           "name": "dtbo",
-          "url": "https://github.com/Hackneyed-releases/releases/releases/download/02102024/dtbo.img"
+          "url": "https://ota.hackneyed.workers.dev/0:/luigi/dtbo.img"
         },
         {
           "name": "vendor_boot",
-          "url": "https://github.com/Hackneyed-releases/releases/releases/download/02102024/vendor_boot.img"
-        },
-        {
-          "name": "super_empty",
-          "url": "https://github.com/Hackneyed-releases/releases/releases/download/02102024/super_empty.img"
+          "url": "https://ota.hackneyed.workers.dev/0:/luigi/vendor_boot.img"
         },
         {
           "name": "Gapps",
           "url": "https://wiki.lineageos.org/gapps/"
         }
-      ]
+      ],
+      "xda": "https://xdaforums.com/t/rom-14-0-unofficial-lineageos-21-for-realme-10-pro-5g-luigi.4685514/"
+    },
+    {
+      "name": "LineageOS",
+      "version": "21",
+      "project_name": "Official",
+      "models": "RMX3660, RMX3661",
+      "date": "Weekly",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Read wiki carefully to understand the requirements and how to flash properly",
+        "In case if you find any bugs, report with proper logs",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_luigi/tree/lineage-21"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://download.lineageos.org/devices/luigi/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/mirror-21"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://wiki.lineageos.org/devices/luigi/",
+      "xda": "https://xdaforums.com/t/rom-14-0-unofficial-lineageos-21-for-realme-10-pro-5g-luigi.4685514/"
+    },
+    {
+      "name": "LMODroid",
+      "version": "5",
+      "project_name": "Official",
+      "models": "RMX3660, RMX3661",
+      "date": "Weekly",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Check wiki for changelogs",
+        "For install instructions, visit product wiki page from LineageOS website",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LMODroid-Devices/device_realme_sm6375-common/tree/fourteen"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LMODroid-Devices/device_realme_luigi/tree/fourteen"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://get.libremobileos.com/devices/luigi/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/lmo5-mirror"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://get.libremobileos.com/changes"
     },
     {
       "name": "Revert to Stock",
-      "models": "CPH2467, CPH2465",
-      "date": "2024-10-27",
+      "models": "RMX3660, RMX3661",
+      "date": "2024-12-04",
       "android_version": "14",
       "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/revert.webp?alt=media&token=bce2172a-20fa-4a8f-83cb-4245d0df9cee",
       "changelog": [
-        "Fixed security patch level abortion"
+        "Stable working method to revert back to stock rom."
       ],
       "notes": [
-        "You need to be on latest los or los based roms before proceeding",
-        "Only for installing Android 14 stock rom (OOS14)",
+        "You need to be on los 22 or los 22 based roms before proceeding",
+        "Only for installing Android 14 stock rom (RUI5)",
         "Only use the mentioned recovery to install (Won't work with other recoveries)",
         "Take a backup of your data as this process will erase /data partition",
         "Follow instructions carefully for flashing"
@@ -416,7 +419,7 @@
         "Select apply update > install using adb",
         "Connect device to computer and type the following command",
         "adb sideload ***.zip (Replace with the filename of the stock rom)",
-        "Click yes for signature verification failure and security patch downgrade warnings and click no for reboot to recovery for flashing additional files.",
+        "Click yes for signature verification failure and security patch downgrade warnings and click no for reboot to recovery for flashing additional files",
         "Reboot to bootloader once after this step completes. (Don't reboot to system)",
         "Download the partitions zip file, extract and run flash",
         "Great! Stock rom has been installed in ur device successfully"
@@ -424,11 +427,44 @@
       "downloads": [
         {
           "name": "Recovery",
-          "url": "https://github.com/Hackneyed-releases/larry/releases/download/stock/recovery_larry.zip"
+          "url": "https://github.com/Hackneyed-releases/luigi/releases/download/stock/recovery.zip"
         },
         {
           "name": "Partitions",
-          "url": "https://github.com/Hackneyed-releases/larry/releases/download/stock/partitions.zip"
+          "url": "https://github.com/Hackneyed-releases/luigi/releases/download/stock/partitions.zip"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "Official",
+      "project_name": "Archive",
+      "models": "RMX3660, RMX3661",
+      "date": "Based on Availability of builds",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+      "notes": [
+        "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+        "Bug reports are not accepted on these builds since these are not maintained now."
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_luigi"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Get it from here",
+          "url": "https://github.com/Hackneyed-releases/luigi/releases/tag/lineageos"
         }
       ]
     }

@@ -1,0 +1,541 @@
+{
+  "X00TD": [
+    {
+      "name": "LineageOS",
+      "version": "22",
+      "project_name": "Unofficial",
+      "models": "X00TD, X00T",
+      "date": "2025-03-18",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22_black.png?alt=media&token=7b063878-397c-49da-acb1-f020c3abd6e4",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Initial release"
+      ],
+      "notes": [
+        "This is 4.19 kernel based build.",
+        "Use the mentioned recovery to install",
+        "Do clean flash if coming from official lineageos 20",
+        "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
+      ],
+      "issues": [
+        "Nothing found so far. Report with proper logs if you finds any."
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download recovery and rom from downloads section.",
+        "Reboot to bootloader",
+        "Flash the downloaded recovery image to your device by typing:",
+        "[command]fastboot flash recovery recovery.img[/command]",
+        "With the device powered off, hold Volume Down + Power. Keep holding both buttons until the “ASUS” logo appears on the screen, then release",
+        "Connect device to computer",
+        "Format data",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload lineage***.zip[/command]",
+        "After flash completed, you can flash any other zips like gapps, magisk, other addons etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/Teamhackneyed/android_device_asus_sdm660-common/tree/lineage-22.1"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/Teamhackneyed/android_device_asus_X00TD/tree/lineage-22.1"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/Teamhackneyed/android_kernel_asus_sdm660/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/18032025/lineage-22.1-2025031818-UNOFFICIAL-X00TD.zip"
+        },
+        {
+          "name": "boot",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/18032025/boot.img"
+        },
+        {
+          "name": "recovery",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/18032025/recovery.img"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "21",
+      "project_name": "Unofficial",
+      "models": "X00TD, X00T",
+      "date": "2024-10-03",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Fixed sensors",
+        "Fixed audio issues",
+        "LineageOS source upstream"
+      ],
+      "notes": [
+        "This is 4.19 kernel based build.",
+        "Use the mentioned recovery to install",
+        "Do clean flash if coming from official lineageos 20",
+        "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)"
+      ],
+      "issues": [
+        "Nothing found so far. Report with proper logs if you finds any."
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/Teamhackneyed/android_device_asus_sdm660-common/tree/lineage-21"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/Teamhackneyed/android_device_asus_X00TD/tree/lineage-21"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/Teamhackneyed/android_kernel_asus_sdm660/tree/lineage-21"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/2024100314/lineage-21-2024100314-RELEASE-X00TD.zip"
+        },
+        {
+          "name": "recovery",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/download/2024100314/recovery.img"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "20",
+      "project_name": "Official",
+      "models": "X00TD, X00T",
+      "date": "Weekly",
+      "android_version": "13",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Read wiki carefully to understand the requirements and how to flash properly",
+        "In case if you find any bugs, report with proper logs",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_asus_sdm660-common/tree/lineage-20"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_asus_X00TD/tree/lineage-20"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-20"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://download.lineageos.org/devices/X00TD/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/miirror20"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://wiki.lineageos.org/devices/X00TD/"
+    },
+    {
+      "name": "LMODroid",
+      "version": "4",
+      "project_name": "Official",
+      "models": "X00TD, X00T",
+      "date": "Weekly",
+      "android_version": "13",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Check wiki for changelogs",
+        "For install instructions, visit product wiki page from LineageOS website",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LMODroid-Devices/device_asus_sdm660-common/tree/thirteen"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LMODroid-Devices/device_asus_X00TD/tree/thirteen"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-20"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://get.libremobileos.com/devices/X00TD/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/lmo4"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://get.libremobileos.com/changes"
+    },
+    {
+      "name": "Pixel Experience",
+      "version": "13",
+      "project_name": "Official",
+      "models": "X00TD, X00T",
+      "date": "2023-11-26",
+      "android_version": "13",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe.avif?alt=media&token=9a183e6b-4022-4c49-bbff-33fb80f60f5c",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "November security patch",
+        "Updated translations",
+        "Performance and under the hood improvements"
+      ],
+      "notes": [
+        "This is based on 4.4 kernel",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "Device tree",
+          "url": "https://github.com/PixelExperience-Devices/device_asus_X00TD"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/PixelExperience-Devices/kernel_asus_sdm660/tree/thirteen-x00td"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Normal Edition",
+          "url": "https://get.pixelexperience.org/changelog/X00TD/PixelExperience_X00TD-13.0-20231126-1516-OFFICIAL.zip"
+        },
+        {
+          "name": "Plus Edition",
+          "url": "https://get.pixelexperience.org/changelog/X00TD/PixelExperience_Plus_X00TD-13.0-20231126-1607-OFFICIAL.zip"
+        }
+      ],
+      "Links": "https://wiki.pixelexperience.org/devices/X00TD/install/"
+    },
+    {
+      "name": "LMODroid",
+      "version": "3",
+      "project_name": "Official",
+      "models": "X00TD, X00T",
+      "date": "Weekly",
+      "android_version": "12.1",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Check wiki for changelogs",
+        "For install instructions, visit product wiki page from LineageOS website",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LMODroid-Devices/device_asus_sdm660-common/tree/twelve"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LMODroid-Devices/device_asus_X00TD/tree/twelve"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-19.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://get.libremobileos.com/devices/X00TD/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/lmo3"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://get.libremobileos.com/changes"
+    },
+    {
+      "name": "AOSP Extended",
+      "version": "9.1",
+      "project_name": "Unofficial",
+      "models": "X00TD, X00T",
+      "date": "2022-06-06",
+      "android_version": "12",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/aex.jpg?alt=media&token=10fe4193-3b81-4b38-8d26-a4e0ff327415",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Fixed cdfinger sensitivity",
+        "Properly enabled asus_lcd_early_unblank_func for X00TD",
+        "Updated fingerprint permissions",
+        "Dropped unused blobs",
+        "Sepolicy updates"
+      ],
+      "notes": [
+        "This is based on 4.4 kernel",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-19.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Gapps Build",
+          "url": "https://www.pling.com/p/1635609/"
+        },
+        {
+          "name": "Vanila Build",
+          "url": "https://www.pling.com/p/1661168/"
+        }
+      ]
+    },
+    {
+      "name": "Proton AOSP",
+      "version": "12.0.0",
+      "project_name": "Unofficial",
+      "models": "X00TD, X00T",
+      "date": "2021-11-13",
+      "android_version": "12",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/PROTONAOSP.png?alt=media&token=db5ba754-f8a0-4892-a762-b69629bd0b70",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Initial Build"
+      ],
+      "notes": [
+        "Android 12.1 based",
+        "This is based on 4.4 kernel",
+        "Build is Enforcing",
+        "Disabled Force encryption",
+        "Clean Flash if you are coming from A11/any encrypted rom",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_asus_sdm660/tree/lineage-19.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Download",
+          "url": "https://www.pling.com/p/1641266/"
+        }
+      ]
+    },
+    {
+      "name": "Hackneyed Kernel",
+      "version": "A12",
+      "project_name": "RC",
+      "models": "X00TD, X00T",
+      "date": "2022-07-17",
+      "android_version": "12",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/hackneyed.jpeg?alt=media&token=62722782-8b2a-4b9d-b28d-7db7e1642dab",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Cleaned up dtsi files",
+        "Lowmemorykiller improvements",
+        "Set swappiness to 100",
+        "Zram fixes and improvements",
+        "Improved app opening speed",
+        "Reduced jitter",
+        "Optimized idle loop",
+        "Queue works on power efficient workqueue",
+        "wakeup source improvements",
+        "Merged cfq patches"
+      ],
+      "notes": [
+        "This is only for 4.4 kernel based roms. Dont be oversmart by trying with 4.19 builds",
+        "This is a HMP kernel",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/Vivekachooz/android_kernel_asus_sdm660"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Download",
+          "url": "https://userupload.net/xm6mirge2dvl"
+        }
+      ]
+    },
+    {
+      "name": "TWRP Recovery",
+      "version": "3.6.2_12",
+      "project_name": "Unofficial",
+      "models": "X00TD, X00T",
+      "date": "2022-08-15",
+      "android_version": "12",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/twrp.avif?alt=media&token=d63c4cd2-b962-4839-bc39-80de5d47fc5d",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Fixed decryption in some usecases",
+        "Updated dt2w node",
+        "Updated kernel"
+      ],
+      "notes": [
+        "This is only for 4.4 kernel based roms. Dont be oversmart by trying with 4.19 builds",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/Vivekachooz/android_kernel_asus_sdm660"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Download",
+          "url": "https://www.pling.com/p/1588691/"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "Official",
+      "project_name": "Archive",
+      "models": "X00TD, X00T",
+      "date": "Based on Availability of builds",
+      "android_version": "8.0, 9.0, 11, 12",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+        "Bug reports are not accepted on these builds since these are not maintained now."
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_asus_sdm660-common"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_asus_X00TD"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_asus_sdm660"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Get it from here",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/los_archive"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Experience",
+      "version": "Official",
+      "project_name": "Archive",
+      "models": "X00TD, X00T",
+      "date": "Based on Availability of builds",
+      "android_version": "9.0, 10, 11, 12, 13",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe_archive.png?alt=media&token=f51009fa-543d-4912-8fad-c81323227755",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "This Page contains the final Official Pixel Experience builds that existed for this device on each versions.",
+        "Bug reports are not accepted on these builds since these are not maintained now."
+      ],
+      "sourcelink": [
+        {
+          "name": "Device tree",
+          "url": "https://github.com/PixelExperience-Devices/device_asus_X00TD"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/PixelExperience-Devices/kernel_asus_sdm660"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Get it from here",
+          "url": "https://github.com/Hackneyed-releases/X00TD/releases/tag/pe_archive"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "oscaro": [
+    {
+      "name": "LineageOS",
+      "version": "22",
+      "project_name": "Official",
+      "models": "CPH2381, CPH2409",
+      "date": "Weekly",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22_black.png?alt=media&token=7b063878-397c-49da-acb1-f020c3abd6e4",
+      "notes": [
+        "Read wiki carefully to understand the requirements and how to flash properly",
+        "In case if you find any bugs, report with proper logs",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_oneplus_sm6375-common/tree/lineage-22.1"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_oneplus_oscaro/tree/lineage-22.1"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_oneplus_sm6375/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://download.lineageos.org/devices/oscaro/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/oscaro/releases/tag/mirror-22"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://wiki.lineageos.org/devices/oscaro/"
+    },
+    {
+      "name": "LineageOS",
+      "version": "22",
+      "project_name": "Unofficial",
+      "models": "CPH2381, CPH2409",
+      "date": "2025-03-12",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+      "changelog": [
+        "Brought back Faceunlock",
+        "Updated Integrity fp from caiman_beta backlava BP22",
+        "Uprevd tetheroffload to 1.1",
+        "Enabled wifi aware support",
+        "Switchd to OSS Audio hal",
+        "Cleaned up media configs",
+        "Updated blobs from from CPH2467_14.0.0.1330(EX01) and CPH2381_14.0.0.932(EX01)",
+        "Removed unused media_codecs and profiles xmls",
+        "Enabled UFFD support",
+        "Merged LA.UM.9.14.r1-25800-LAHAINA.QSSI15.0 to kernel",
+        "Enabled 3 finger swipe to screenshot",
+        "Fixed centre clock allignment",
+        "Switched back to lineage SUW",
+        "Reduced screenshot delay to 3s",
+        "Enabled long press to copy wifi password",
+        "Exposed radio info (*#*#4636#*#*) into settings",
+        "Improved scrolling smoothness",
+        "Improvements to twelve (Music player), Aperture and Glimpse",
+        "LineageOS source upstream"
+      ],
+      "notes": [
+        "You need to be on latest android 14 stock rom before proceeding",
+        "[warning]This is user build and not userdebug. So flashing magisk requires patching boot.img method (same like stock). Also gapps are already preincluded in this. Dont flash it again.[/warning]",
+        "OTA support is enabled by default. new builds can be updated through the inbuilt updater",
+        "Play integrity passes by default (Both basic and device)",
+        "Unlimited google photos backup support is enabled by default",
+        "If coming from Android 14 custom roms, then you need to wipe super partition using super_empty.img",
+        "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+        "[command]fastboot wipe-super super_empty.img[/command]",
+        "Use the mentioned recovery to install",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Follow instructions carefully for flashing"
+      ],
+      "issues": [
+        "Nothing critical so far. If you find any, then report with proper logs"
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+        "Reboot to bootloader",
+        "Flash the downloaded image files to your device by typing:",
+        "[command]fastboot flash boot boot.img[/command]",
+        "[command]fastboot flash dtbo dtbo.img[/command]",
+        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
+        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload lineage***.zip[/command]",
+        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_oneplus_sm6375/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://dl.surf/explore/file/687d874b"
+        },
+        {
+          "name": "boot",
+          "url": "https://dl.surf/explore/file/8e6a8fce"
+        },
+        {
+          "name": "dtbo",
+          "url": "https://dl.surf/explore/file/f82260fa"
+        },
+        {
+          "name": "vendor_boot",
+          "url": "https://dl.surf/explore/file/071c36c9"
+        },
+        {
+          "name": "super_empty",
+          "url": "https://dl.surf/explore/file/49964551"
+        },
+        {
+          "name": "vbmeta",
+          "url": "https://dl.surf/explore/file/e55bd25b"
+        }
+      ]
+    }
+  ]
+}

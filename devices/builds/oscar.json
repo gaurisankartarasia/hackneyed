@@ -1,0 +1,651 @@
+{
+  "oscar": [
+    {
+      "name": "LineageOS",
+      "version": "22",
+      "project_name": "Official",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "Weekly",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22_black.png?alt=media&token=7b063878-397c-49da-acb1-f020c3abd6e4",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Read wiki carefully to understand the requirements and how to flash properly",
+        "In case if you find any bugs, report with proper logs",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-22.1"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_oscar/tree/lineage-22.1"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://download.lineageos.org/devices/oscar/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/mirror-22"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://wiki.lineageos.org/devices/oscar/"
+    },
+    {
+      "name": "LineageOS",
+      "version": "22",
+      "project_name": "Bleeding Edge",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "2025-03-03",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los22.png?alt=media&token=16939940-63d3-4491-ba36-82d7f8e2154f",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Brought back Faceunlock",
+        "Updated Integrity fp from caiman_beta backlava BP22",
+        "Uprevd tetheroffload to 1.1",
+        "Enabled wifi aware support",
+        "Removed unused media_codecs and profiles xmls",
+        "Enabled UFFD support",
+        "Merged LA.UM.9.14.r1-25800-LAHAINA.QSSI15.0 to kernel",
+        "Enabled 3 finger swipe to screenshot",
+        "Fixed centre clock allignment",
+        "Switched back to lineage SUW",
+        "Reduced screenshot delay to 3s",
+        "Enabled long press to copy wifi password",
+        "Exposed radio info (*#*#4636#*#*) into settings",
+        "Improved scrolling smoothness",
+        "Improvements to twelve (Music player), Aperture and Glimpse",
+        "LineageOS source upstream"
+      ],
+      "notes": [
+        "[warning]This is user build and not userdebug. So flashing magisk requires patching boot.img method (same like stock). Also gapps are already preincluded in this. Dont flash it again.[/warning]",
+        "OTA support is enabled by default. new builds can be updated through the inbuilt updater",
+        "Play integrity passes by default (Both basic and device)",
+        "Unlimited google photos backup support is enabled by default",
+        "If coming from Android 14 custom roms, then you need to wipe super partition using super_empty.img",
+        "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+        "[command]fastboot wipe-super super_empty.img[/command]",
+        "Use the mentioned recovery to install",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Follow instructions carefully for flashing"
+      ],
+      "issues": [
+        "Nothing critical so far. If you find any, then report with proper logs"
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+        "Reboot to bootloader",
+        "Flash the downloaded image files to your device by typing:",
+        "[command]fastboot flash boot boot.img[/command]",
+        "[command]fastboot flash dtbo dtbo.img[/command]",
+        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
+        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Connect device to computer",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload lineage***.zip[/command]",
+        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://dl.surf/explore/file/b85f39b6"
+        },
+        {
+          "name": "boot",
+          "url": "https://dl.surf/explore/file/1c1b2b58"
+        },
+        {
+          "name": "dtbo",
+          "url": "https://dl.surf/explore/file/6149da8e"
+        },
+        {
+          "name": "vbmeta",
+          "url": "https://dl.surf/explore/file/9cd44202"
+        },
+        {
+          "name": "vendor_boot",
+          "url": "https://dl.surf/explore/file/d0fa32ee"
+        },
+        {
+          "name": "super_empty",
+          "url": "https://dl.surf/explore/file/9012ac4a"
+        }
+      ]
+    },
+    {
+      "name": "PixelOS",
+      "version": "15",
+      "project_name": "Unofficial",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "2025-02-13",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pixelos-15.jpg?alt=media&token=f3e2c3fa-de43-464c-8230-a4c0ad830492",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Switched to aidl sensors multihal",
+        "Switched to aidl bootctrl hal",
+        "Merged February 2025 Security",
+        "Merged ASB-2025-02-05_11-5.4 to kernel",
+        "Introduced Flashlight Strength Tile",
+        "Fixed smartspace layout",
+        "Improvements to FaceSense",
+        "PixelOS source upstream"
+      ],
+      "notes": [
+        "If coming from Android 14 custom roms, then you need to wipe super partition using super_empty.img",
+        "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+        "[command]fastboot wipe-super super_empty.img[/command]",
+        "Use the mentioned recovery to install",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Follow instructions carefully for flashing"
+      ],
+      "issues": [
+        "Nothing critical so far. If you find any, then report with proper logs"
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+        "Reboot to bootloader",
+        "Flash the downloaded image files to your device by typing:",
+        "[command]fastboot flash boot boot.img[/command]",
+        "[command]fastboot flash dtbo dtbo.img[/command]",
+        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
+        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Connect device to computer",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload PixelOS***.zip[/command]",
+        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, other addons etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://dl.surf/explore/file/a1ee0ce8"
+        },
+        {
+          "name": "boot",
+          "url": "https://dl.surf/explore/file/d8ad9ea7"
+        },
+        {
+          "name": "dtbo",
+          "url": "https://dl.surf/explore/file/cdd5840c"
+        },
+        {
+          "name": "vbmeta",
+          "url": "https://dlupload.com/filedetail/938803717"
+        },
+        {
+          "name": "vendor_boot",
+          "url": "https://dl.surf/explore/file/01598eb0"
+        },
+        {
+          "name": "super_empty",
+          "url": "https://dlupload.com/filedetail/1979297105"
+        }
+      ]
+    },
+    {
+      "name": "CrDroid",
+      "version": "11",
+      "project_name": "Unofficial",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "2025-01-27",
+      "android_version": "15",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/crdroid.png?alt=media&token=875450df-7bff-49ca-a2df-f0f7f50a3ff4",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Initial build"
+      ],
+      "notes": [
+        "If coming from Android 14 custom roms, then you need to wipe super partition using super_empty.img",
+        "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+        "[command]fastboot wipe-super super_empty.img[/command]",
+        "Use the mentioned recovery to install",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Follow instructions carefully for flashing"
+      ],
+      "issues": [
+        "Nothing critical so far. If you find any, then report with proper logs"
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+        "Reboot to bootloader",
+        "Flash the downloaded image files to your device by typing:",
+        "[command]fastboot flash boot boot.img[/command]",
+        "[command]fastboot flash dtbo dtbo.img[/command]",
+        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
+        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Connect device to computer",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload crDroid***.zip[/command]",
+        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, other addons etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-22.1"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://dl.surf/explore/file/d543f73c"
+        },
+        {
+          "name": "boot",
+          "url": "https://dl.surf/explore/file/e4ea5bb3"
+        },
+        {
+          "name": "dtbo",
+          "url": "https://dl.surf/explore/file/27510970"
+        },
+        {
+          "name": "vendor_boot",
+          "url": "https://dl.surf/explore/file/a682a0c7"
+        },
+        {
+          "name": "super_empty",
+          "url": "https://dl.surf/explore/file/ce1ad740"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://github.com/MindTheGapps/15.0.0-arm64/releases"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "21",
+      "project_name": "Bleeding Edge",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "2024-09-17",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/temp.png?alt=media&token=eb38ee66-9f44-49f5-a129-c9cc063413ab",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Fixed conference calls with Jio sim",
+        "Fixed dynamic partition size",
+        "Enabled hwc min duration",
+        "Boost little cluster to max upon interaction",
+        "Fixed EXPENSIVE_RENDERING",
+        "Allign pinnerservice files with RUI",
+        "Merged security patches upto September 2024",
+        "LineageOS source upstream"
+      ],
+      "notes": [
+        "Clean flash is needed",
+        "In case if you face kInstallDeviceOpenError, wipe super partion with both slots using the command below and wipe data after that",
+        "fastboot wipe-super super_empty.img",
+        "Use the mentioned recovery to install",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Follow instructions carefully for flashing",
+        "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+        "Reboot to bootloader",
+        "Flash the downloaded image files to your device by typing:",
+        "[command]fastboot flash boot boot.img[/command]",
+        "[command]fastboot flash dtbo dtbo.img[/command]",
+        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
+        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Connect device to computer",
+        "Go to Advanced > Enter fastboot",
+        "Now you will be in fastbootd mode. extract the downloaded firmware zip in pc",
+        "Under the firmware, there should be install.sh and install.bat files",
+        "Run install script as per your OS. (sh file if linux/ubuntu and bat if windows)",
+        "After successfull flash, reboot to recovery again",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload lineage***.zip[/command]",
+        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_oscar/tree/lineage-21"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Full ROM",
+          "url": "https://dlupload.com/filedetail/1966352602"
+        },
+        {
+          "name": "boot",
+          "url": "https://dlupload.com/filedetail/734459976"
+        },
+        {
+          "name": "dtbo",
+          "url": "https://dlupload.com/filedetail/1781091943"
+        },
+        {
+          "name": "vendor_boot",
+          "url": "https://dlupload.com/filedetail/191664307"
+        },
+        {
+          "name": "super_empty",
+          "url": "https://dlupload.com/filedetail/542658093"
+        },
+        {
+          "name": "Firmware",
+          "url": "https://dlupload.com/filedetail/1242859855"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "21",
+      "project_name": "Official",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "Weekly",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los21.jpg?alt=media&token=93c59144-ad32-4ddb-badf-74b281bc3e34",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Read wiki carefully to understand the requirements and how to flash properly",
+        "In case if you find any bugs, report with proper logs",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common/tree/lineage-21"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_oscar/tree/lineage-21"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://download.lineageos.org/devices/oscar/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/mirror-21"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://wiki.lineageos.org/devices/oscar/",
+      "xda": "https://xdaforums.com/t/rom-14-0-unofficial-lineageos-21-for-realme-9-pro-5g-rmx3471-rmx3472.4648939/"
+    },
+    {
+      "name": "LMODroid",
+      "version": "5",
+      "project_name": "Official",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "Weekly",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/lmo.avif?alt=media&token=8ac7b665-6cc0-4ab8-8457-e4984da11fd9",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "notes": [
+        "Check wiki for changelogs",
+        "For install instructions, visit product wiki page from LineageOS website",
+        "[warning]Use mirror link if official website shows no builds or displaying another version.[/warning]"
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LMODroid-Devices/device_realme_sm6375-common/tree/fourteen"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LMODroid-Devices/device_realme_oscar/tree/fourteen"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375/tree/lineage-21"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Official website",
+          "url": "https://get.libremobileos.com/devices/oscar/builds"
+        },
+        {
+          "name": "Mirror link",
+          "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/lmo5-mirror"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ],
+      "Links": "https://get.libremobileos.com/changes"
+    },
+    {
+      "name": "LineageOS",
+      "version": "20",
+      "project_name": "Unofficial",
+      "models": "RMX3471",
+      "date": "2023-12-19",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los20.jpg?alt=media&token=7b5f7216-9222-4c48-8726-50bc955f681a",
+      "warning": [
+        "An official method of unlocking the bootloader is not available, but there may be some unofficial methods available. Unofficial methods are not recommended, so use them at your own risk! An unlocked bootloader is required to install this."
+      ],
+      "changelog": [
+        "Updated blobs from RMX3471_11.C.21",
+        "Kernel upsteamed to 5.4.259",
+        "Merged December security patch",
+        "LineageOS source upstream"
+      ],
+      "notes": [
+        "Use the mentioned recovery to install",
+        "Take a backup of your data as this process will erase /data partition",
+        "[warning]Before following these instructions please ensure that the device is currently using the latest firmware version. Otherwise flash the latest stock firmware before continuing further[/warning]",
+        "Follow instructions carefully for flashing",
+        "MindTheGapps preferred for gapps (can try others too, MTG is the tested one)",
+        "In case if you find any bugs, report with proper logs"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Download all 4 files listed above (Rom, boot, dtbo, vendor_boot)",
+        "Reboot to bootloader",
+        "Flash the downloaded image files to your device by typing:",
+        "[command]fastboot flash boot boot.img[/command]",
+        "[command]fastboot flash dtbo dtbo.img[/command]",
+        "[command]fastboot flash vendor_boot vendor_boot.img[/command]",
+        "After flashing all three files, reboot to recovery from bootloader mode using volume down keys and selecting recovery mode",
+        "Connect device to computer",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command by replacing with the filename of the zip",
+        "[command]adb sideload lineage***.zip[/command]",
+        "After flash completed, recovery will ask to reboot to recovery if in case u need to flash any other zips like magisk, gapps etc. Proceed accordingly",
+        "Format data once again after everything completed",
+        "Now you successfully flashed the rom. Boot into the rom and enjoy"
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://dlupload.com/filedetail/983511962"
+        },
+        {
+          "name": "boot",
+          "url": "https://dlupload.com/filedetail/1495662469"
+        },
+        {
+          "name": "dtbo",
+          "url": "https://dlupload.com/filedetail/598306368"
+        },
+        {
+          "name": "vendor_boot",
+          "url": "https://dlupload.com/filedetail/720510198"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://wiki.lineageos.org/gapps/"
+        }
+      ]
+    },
+    {
+      "name": "Revert to Stock",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "2024-10-27",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/revert.webp?alt=media&token=bce2172a-20fa-4a8f-83cb-4245d0df9cee",
+      "changelog": [
+        "Fixed security patch level abortion"
+      ],
+      "notes": [
+        "You need to be on los 22 or los 22 based roms before proceeding",
+        "Only for installing Android 14 stock rom (RUI5)",
+        "Only use the mentioned recovery to install (Won't work with other recoveries)",
+        "Take a backup of your data as this process will erase /data partition",
+        "Follow instructions carefully for flashing"
+      ],
+      "issues": [
+        "Nothing found so far. Works as expected"
+      ],
+      "flashingSteps": [
+        "[warning]The provided instructions are for flashing this build. These will only work if you follow every section and step precisely. Do not continue after something fails! Remove all Google accounts from your device before proceeding to avoid Factory reset protection[/warning]",
+        "Reboot to bootloader",
+        "Type the following command to wipe /data:",
+        "[command]fastboot -w[/command]",
+        "Download the recovery, extract and run flash",
+        "Now your device will automatically boot into recovery.",
+        "Format data (ignore if recovery complains about metadata type)",
+        "Select apply update > install using adb",
+        "Connect device to computer and type the following command",
+        "adb sideload ***.zip (Replace with the filename of the stock rom)",
+        "Click yes for signature verification failure and security patch downgrade warnings and click no for reboot to recovery for flashing additional files",
+        "Reboot to bootloader once after this step completes. (Don't reboot to system)",
+        "Download the partitions zip file, extract and run flash",
+        "Great! Stock rom has been installed in ur device successfully"
+      ],
+      "downloads": [
+        {
+          "name": "Recovery",
+          "url": "https://github.com/Hackneyed-releases/oscar/releases/download/stock/recovery_oscar.zip"
+        },
+        {
+          "name": "Partitions",
+          "url": "https://github.com/Hackneyed-releases/oscar/releases/download/stock/partitions.zip"
+        }
+      ]
+    },
+    {
+      "name": "LineageOS",
+      "version": "Official",
+      "project_name": "Archive",
+      "models": "RMX3471, RMX3472, RMX3474, RMX3478",
+      "date": "Based on Availability of builds",
+      "android_version": "14",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/peek_device.png?alt=media&token=b31897b8-e4bc-469e-bc68-a67459b5f27d",
+      "notes": [
+        "This Page contains the final Official LineageOS builds that existed for this device on each versions.",
+        "Bug reports are not accepted on these builds since these are not maintained now."
+      ],
+      "sourcelink": [
+        {
+          "name": "Common tree",
+          "url": "https://github.com/LineageOS/android_device_realme_sm6375-common"
+        },
+        {
+          "name": "Device tree",
+          "url": "https://github.com/LineageOS/android_device_realme_oscar"
+        },
+        {
+          "name": "kernel",
+          "url": "https://github.com/LineageOS/android_kernel_realme_sm6375"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Get it from here",
+          "url": "https://github.com/Hackneyed-releases/oscar/releases/tag/lineageos"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "mido": [
+    {
+      "name": "Pixel Experience",
+      "version": "10",
+      "project_name": "Frozen Fire",
+      "models": "mido",
+      "date": "2021-01-14",
+      "android_version": "10",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/pe.avif?alt=media&token=9a183e6b-4022-4c49-bbff-33fb80f60f5c",
+      "changelog": [
+        "Merged January security patch",
+        "Upstreamed to latest PE sources",
+        "Other fixes and improvements"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/Xiaomi-msm8953-development/android_kernel_xiaomi_msm8953"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Full ROM",
+          "url": "https://bit.ly/3qivQbR"
+        }
+      ]
+    }
+  ]
+}

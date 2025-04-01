@@ -1,0 +1,53 @@
+{
+  "kuntao": [
+    {
+      "name": "LineageOS",
+      "version": "18.1",
+      "project_name": "Unofficial",
+      "models": "P2a42",
+      "date": "2024-09-25",
+      "android_version": "11",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/los18.avif?alt=media&token=77d40138-2be1-44fa-809e-110f4de9adc4",
+      "changelog": [
+        "Merged upto February 2024 security patch (Support for android 11 ended on February 2024)",
+        "Upstreamed to latest lineage sources",
+        "Fixed some unusual lags",
+        "Set zram to 2GB",
+        "Enabled zram-writeback",
+        "Disabled RX wakelock",
+        "Enabled power efficient workques",
+        "Other fixes and improvements"
+      ],
+      "notes": [
+        "Since Google decided to drop providing security patches to Android 11, and enforcement of bpf from android 12 onwards, this marks the final lineageos build for kuntao."
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "kernel",
+          "url": "https://github.com/Vivekachooz/android_kernel_lenovo_msm8953"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "ROM",
+          "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/lineage-18.1-2024092505-kuntao.zip"
+        },
+        {
+          "name": "Boot",
+          "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/boot.img"
+        },
+        {
+          "name": "Recovery",
+          "url": "https://github.com/Hackneyed-releases/kuntao/releases/download/25092024/recovery.img"
+        },
+        {
+          "name": "Gapps",
+          "url": "https://github.com/MindTheGapps/11.0.0-arm64/releases"
+        }
+      ]
+    }
+  ]
+}

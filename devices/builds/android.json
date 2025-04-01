@@ -1,0 +1,32 @@
+{
+  "android": [
+    {
+      "name": "MXPlayer Custom Codecs",
+      "version": "1.87.0",
+      "project_name": "ffmpeg",
+      "models": "android",
+      "date": "2025-02-27",
+      "android_version": "5.0 or higher",
+      "romLogo": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/MXPlayer_codec.jpg?alt=media&token=1fdc0151-ee5e-43da-8db6-5fbfff7256f8",
+      "changelog": [
+        "Fixed compatibility with MXPlayer 1.90.1",
+        "Updated to ffmpeg v4.2"
+      ],
+      "issues": [
+        "Nothing found so far."
+      ],
+      "sourcelink": [
+        {
+          "name": "ffmpeg",
+          "url": "https://mx.j2inter.com/download"
+        }
+      ],
+      "downloads": [
+        {
+          "name": "Codecs",
+          "url": "https://github.com/Vivekachooz/MXPlayer_FFmpeg/releases/tag/1.87.0"
+        }
+      ]
+    }
+  ]
+}
