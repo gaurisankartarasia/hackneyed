@@ -12,9 +12,18 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { useTheme } from "@mui/material/styles";
 
+import { useMeConfig } from "../../hooks/useFetchMeConfig";
+
+
 const AboutSection = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+  const { data, error, isLoading } = useMeConfig();
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error loading data</p>;
+
+  
 
   return (
     <Box
@@ -29,9 +38,9 @@ const AboutSection = () => {
       }}
     >
       <Avatar
-        alt="Vivekachooz"
-        src="https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/me.jpg?alt=media&token=df1bf51f-073a-4d07-b4e1-397f4573fe43"
-        sx={{
+        alt={data.about.name}
+        src={data.site_info.display_picture}
+            sx={{
           width: isSmallScreen ? 200 : 400,
           height: isSmallScreen ? 200 : 400,
           boxShadow: 3,
@@ -49,17 +58,13 @@ const AboutSection = () => {
             About Me
           </Typography>
           <Typography variant="h4" gutterBottom>
-            Android Developer
+            {data.about.role_title}
           </Typography>
           <Typography variant="body1" paragraph>
-            I'm Vivek, an Android developer, enthusiast, and freelancer. I'm
-            also a BA English Language and Literature graduate student.
-            Android development is my passion.
+           {data.about.paragraph_1}
           </Typography>
           <Typography variant="body1" paragraph>
-            I provide aftermarket software support for various devices, including
-            Oneplus Nord CE3 Lite 5G, Realme 10 Pro 5G, and others. My Custom ROMs
-            and kernels focus on performance and battery balance.
+          {data.about.paragraph_2}
           </Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
@@ -67,12 +72,12 @@ const AboutSection = () => {
                 <GitHub sx={{ mr: 1 }} />
                 <Typography variant="body1">Web:</Typography>
                 <Link
-                  href="https://vivekachooz.github.io"
+                  href={data.site_info.web}
                   sx={{ ml: 1 }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  vivekachooz.github.io
+                  {data.site_info.web}
                 </Link>
               </Box>
             </Grid>
@@ -81,18 +86,18 @@ const AboutSection = () => {
                 <Mail sx={{ mr: 1 }} />
                 <Typography variant="body1">Email:</Typography>
                 <Link href="mailto:vivekachooz@gmail.com" sx={{ ml: 1 }}>
-                  vivekachooz@gmail.com
+                 {data.site_info.contact_mail}
                 </Link>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="body1">
-                <strong>Country:</strong> India
+                <strong>Country:</strong> {data.about.country}
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="body1">
-                <strong>Qualification:</strong> BA English graduate
+                <strong>Qualification:</strong> {data.about.qualification}
               </Typography>
             </Grid>
           </Grid>
@@ -104,3 +109,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+

@@ -1,17 +1,18 @@
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AndroidIcon from '@mui/icons-material/Android';
-import { SocialIconsRow } from './social_icons_front_hero'; // Assuming this path is correct
+import { SocialIconsRow } from './social_icons_front_hero'; 
 
-// MUI Components
+import { useMeConfig } from "../../hooks/useFetchMeConfig";
+
+
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { keyframes } from '@mui/system'; 
 
-// Define the floating animation
 const float = keyframes`
   0% { transform: translatey(0px); }
   50% { transform: translatey(-20px); }
@@ -19,21 +20,21 @@ const float = keyframes`
 `;
 
 const VivekPortfolioHero = () => {
-  const navigate = useNavigate();
-  const goToProducts = () => {
-    navigate('/products');
-  };
+
+   const { data } = useMeConfig();
+
+    if (!data) return <p>Error loading data</p>;
 
   const greenColor = '#4ade80'; 
 
   return (
     <Box
       sx={{
-        minHeight: 'calc(100vh - 64px)', // Adjust 64px based on your AppBar height
+        minHeight: 'calc(100vh - 64px)', 
         display: 'flex',
-        alignItems: 'center', // Center content vertically in the Box
-        position: 'relative', // Needed for absolute positioning of the icon
-        overflow: 'hidden', // Hide overflow
+        alignItems: 'center', 
+        position: 'relative', 
+        overflow: 'hidden', 
         py: { xs: 4, sm: 6, md: 8 },
         px: { xs: 2, sm: 3, md: 4 },
       }}
@@ -42,26 +43,25 @@ const VivekPortfolioHero = () => {
         maxWidth="xl"
         sx={{
           display: 'flex',
-          flexDirection: { xs: 'column', md: 'row' }, // Change to row starting from 'md'
+          flexDirection: { xs: 'column', md: 'row' }, 
           alignItems: 'center',
           justifyContent: 'space-between',
-          position: 'relative', // Relative positioning context for children
+          position: 'relative', 
           zIndex: 1,
-          gap: { xs: 4, md: 6 }, // Add gap between text and icon columns on medium+ screens
+          gap: { xs: 4, md: 6 }, 
         }}
       >
-        {/* Text Content */}
         <Box
           sx={{
-            maxWidth: { xs: '100%', md: '55%' }, // Take full width on small, adjust on medium+
-            textAlign: { xs: 'center', md: 'left' }, // Center on small, left-align medium+
-            zIndex: 2, // Ensure text is above the icon
-            order: { xs: 2, md: 1 }, // Ensure text comes first in the row layout on medium+ screens
+            maxWidth: { xs: '100%', md: '55%' }, 
+            textAlign: { xs: 'center', md: 'left' }, 
+            zIndex: 2, 
+            order: { xs: 2, md: 1 }, 
           }}
         >
           <Typography
             variant="h6"
-            component="h2" // Use h2 for semantic structure if h1 is main heading
+            component="h2" 
             sx={{
               color: greenColor,
               mb: 1,
@@ -72,21 +72,21 @@ const VivekPortfolioHero = () => {
           </Typography>
           <Typography
             variant="h1"
-            component="h1" // Main heading
+            component="h1" 
             sx={{
               fontWeight: 'bold',
               mb: { xs: 3, sm: 4 },
               letterSpacing: '-0.05em',
               fontSize: {
-                xs: '3rem',    // text-4xl
-                sm: '3.75rem', // text-5xl
-                md: '4rem',    // Slightly smaller for md to fit icon
-                lg: '5rem',    // text-8xl approximation
+                xs: '3rem',    
+                sm: '3.75rem', 
+                md: '4rem',   
+                lg: '5rem',   
               },
               lineHeight: 1.1,
             }}
           >
-            VIVEK
+            {data.site_info.front_name}
           </Typography>
           <Typography
             variant="body1"
@@ -94,14 +94,15 @@ const VivekPortfolioHero = () => {
               mb: { xs: 4, sm: 5 },
               fontSize: { xs: '1rem', sm: '1.125rem', lg: '1.25rem' },
               lineHeight: 1.6,
-              maxWidth: '65ch', // Slightly increased max width for readability
-              mx: { xs: 'auto', md: 0 }, // Center text block on small, align left medium+
+              maxWidth: '65ch', 
+              mx: { xs: 'auto', md: 0 }, 
             }}
           >
-            Tired of your phone feeling like a factory-made cookie-cutter? I'm here to spice things up! I create custom ROMs and kernels that let you unlock your phone's true potential. Think faster, smoother, and more personalized.
+            {data.site_info.front_description}
           </Typography>
           <Button
-            onClick={goToProducts}
+            component={Link}
+            to="/products"
             variant='contained'
             size="large"
             sx={{ mb: 4, bgcolor:greenColor }}
@@ -109,47 +110,39 @@ const VivekPortfolioHero = () => {
             View my works
           </Button>
 
-          {/* Social Icons - Ensure it has appropriate styling within its component */}
-           {/* Wrap SocialIconsRow in a Box for alignment control */}
            <Box sx={{ display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
              <SocialIconsRow />
            </Box>
         </Box>
 
-        {/* Android Icon */}
         <Box
           sx={{
             color: greenColor,
             animation: `${float} 6s ease-in-out infinite`,
-            // --- Visibility Fix ---
-            // Show the icon from 'md' screens upwards. Hide on 'xs' and 'sm'.
-            // Adjust 'md' to 'xs' if you want it visible (but potentially smaller) on all screens.
+    
             alignItems: 'center',
             justifyContent: 'center',
-            // --- Layout Fix: Changed from absolute positioning ---
-            // Now it's part of the flex flow defined in the Container
-            position: 'relative', // No longer absolute
-            width: { md: '40%', lg: '45%' }, // Take up remaining space in flex row
-            maxWidth: '500px', // Max width to prevent it getting too huge
-            height: 'auto',    // Maintain aspect ratio
+      
+            position: 'relative',
+            width: { md: '40%', lg: '45%' }, 
+            maxWidth: '500px', 
+            height: 'auto',   
             zIndex: 0,
-            opacity: 0.7, // Slightly increased opacity
-            order: { xs: 1, md: 2 }, // Ensure icon comes second in row layout on medium+
-            mt: { xs: 4, md: 0 }, // Add margin top on small screens when it's stacked
+            opacity: 0.7, 
+            order: { xs: 1, md: 2 }, 
+            mt: { xs: 4, md: 0 }, 
             '& .android-icon': {
-              // --- Sizing Fix: Use responsive rem units ---
-              // Use rem or fixed pixels instead of vh for more predictable sizing
-              width: '100%', // Icon fills its container Box
-              height: 'auto', // Maintain aspect ratio
+          
+              width: '100%',
+              height: 'auto',
             }
           }}
         >
-          {/* Ensure the icon itself scales well */}
           <AndroidIcon
              className="android-icon"
              sx={{
                
-               fontSize: { md: '20rem', lg: '25rem', xl: '30rem' } // Adjust sizes as needed
+               fontSize: { md: '20rem', lg: '25rem', xl: '30rem' } 
              }}
            />
         </Box>

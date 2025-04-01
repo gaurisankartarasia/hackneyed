@@ -152,7 +152,7 @@ const AvailableROMsPage = () => {
   // Handle case where device exists but no ROMs are found (or ROM fetch failed)
   if (!availableROMs && !loading) {
     return (
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto py-4">
         {/* Breadcrumbs might still be useful */}
         <Breadcrumbs separator={<KeyboardArrowRightOutlinedIcon/>} aria-label="breadcrumb" sx={{ margin: 3 }}>
           <MuiLink
@@ -179,7 +179,7 @@ const AvailableROMsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-4">
+    <div className="container mx-auto py-4">
       <Breadcrumbs separator={<KeyboardArrowRightOutlinedIcon/>} aria-label="breadcrumb" sx={{ margin: 3 }}>
         <MuiLink
           component={Link}
@@ -191,7 +191,7 @@ const AvailableROMsPage = () => {
           Devices
         </MuiLink>
         <Typography sx={{ color: "inherity", fontWeight: "600" }}>
-          {device?.device || codename}
+          {device?.device} ({device.codename})
         </Typography>
       </Breadcrumbs>
 

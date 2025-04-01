@@ -1,0 +1,35 @@
+{
+  "site_info": {
+    "logo_url": "https://firebasestorage.googleapis.com/v0/b/react-98765.appspot.com/o/assets%2Fme.jpg?alt=media&token=b955e7b3-74ae-4169-bc6c-a984a6aeab3c",
+    "site_name": "Hackneyed",
+    "display_picture": "https://firebasestorage.googleapis.com/v0/b/personal-fe53d.appspot.com/o/me.jpg?alt=media&token=df1bf51f-073a-4d07-b4e1-397f4573fe43",
+    "contact_mail": "vivekachooz@gmail.com",
+    "web": "https://vivekachooz.github.io/",
+    "front_name": "VIVEK",
+    "front_description": "Tired of your phone feeling like a factory-made cookie-cutter? I'm here to spice things up! I create custom ROMs and kernels that let you unlock your phone's true potential. Think faster, smoother, and more personalized."
+  },
+  "social_links": {
+    "github": "https://github.com/Vivekachooz",
+    "telegram": "https://t.me/vivekachooz",
+    "paypal": "https://paypal.me/vvkachoooz",
+    "x": "https://twitter.com/Achooz6",
+    "instagram": "https://www.instagram.com/vivekachooz/",
+    "facebook": "https://www.facebook.com/vivek.achooz/"
+  },
+  "about": {
+    "name":"Vivekachooz",
+    "role_title": "Android Developer",
+    "paragraph_1": "I'm Vivek, an Android developer, enthusiast, and freelancer. I'm also a BA English Language and Literature graduate student. Android development is my passion.",
+    "paragraph_2": "I provide aftermarket software support for various devices, including Oneplus Nord CE3 Lite 5G, Realme 10 Pro 5G, and others. My Custom ROMs and kernels focus on performance and battery balance.",
+    "country": "India",
+    "qualification": "BA English graduate"
+  }
+
+  ,
+
+  "donate_card":{
+    "name":"Vivekachooz",
+    "description":"Donate if you love my work!",
+    "payment_link": "https://paypal.me/vvkachoooz"
+  }
+}

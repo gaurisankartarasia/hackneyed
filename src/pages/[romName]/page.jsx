@@ -209,7 +209,6 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import MuiLink from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 
 import ROMSourceLinks from "./components/ROMSourceLinks";
@@ -262,7 +261,7 @@ const ROMDetailsPage = () => {
   );
 
   return (
-    <div className="container mx-auto px-4 py-4">
+    <div className="container mx-auto py-4">
       <Breadcrumbs separator={<KeyboardArrowRightOutlinedIcon />}  aria-label="breadcrumb" sx={{ margin: 3 }}>
         {/* ... Breadcrumb links ... */}
          <MuiLink
