@@ -13,8 +13,7 @@ const ContactPage = () => {
 
  const { data, error, isLoading } = useMeConfig();
   
-    if (isLoading) return <p>Loading...</p>;
-    if (error) return <p>Error loading data</p>;
+  
 
   const [formData, setFormData] = useState({
     name: '',
@@ -36,6 +35,9 @@ const ContactPage = () => {
     const mailtoLink = `mailto:${data.site_info.contact_mail}?subject=${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
     window.location.href = mailtoLink;
   };
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error loading data</p>;
 
   return (
     <Container maxWidth="sm" sx={{marginTop:10}} >

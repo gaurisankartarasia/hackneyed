@@ -14,10 +14,9 @@ import { useMeConfig } from "../../hooks/useFetchMeConfig";
 
 export const SocialIconsRow = () => {
 
-  const { data, error, isLoading } = useMeConfig();
+  const { data} = useMeConfig();
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error loading data</p>;
+  if (!data) return null
 
     return (
       <div className="flex space-x-3 mt-3 items-center" id='front_icons'> 

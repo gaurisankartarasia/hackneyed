@@ -115,7 +115,7 @@ export const fetchGroupsConfig = async () => {
  * @returns {Promise<object>}
  */
 export const fetchMeConfig = async () => {
-  const githubUrl = `${GITHUB_BASE_URL}/config/me.json`;
+  const githubUrl = `${GITHUB_BASE_URL}/config/site_info.json`;
   // const githubUrl = `/config/site_info.json`;
   return fetchJson(githubUrl, true, {});
 };
