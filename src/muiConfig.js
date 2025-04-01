@@ -55,7 +55,7 @@ const components = {
         backgroundColor: theme.palette.mode === 'dark' ? '#030915' : '#fff',
         color: theme.palette.mode === 'dark' ? '#fff' : '#4f5251',
         boxShadow:'none',
-        borderBottom: true
+        borderBottom: true,
       }),
     },
   },
