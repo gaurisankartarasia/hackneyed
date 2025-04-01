@@ -1,31 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import "tailwindcss";
 
 body{
-    color: white !important;
-    background-color: black !important;
     padding-top: 60px;
-    font-family: "SUSE", sans-serif !important;
-    
+    font-family: "SUSE", sans-serif !important;  
 }
 
-.modal-enter {
-  opacity: 0;
-}
-
-.modal-enter-active {
-  opacity: 1;
-  transition: opacity 300ms;
-}
-
-.modal-exit {
-  opacity: 1;
-}
-
-.modal-exit-active {
-  opacity: 0;
-  transition: opacity 300ms;
-}

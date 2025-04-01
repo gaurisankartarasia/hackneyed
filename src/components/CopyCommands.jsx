@@ -1,5 +1,35 @@
+
 import React, { useState } from "react";
-import { TbCopy } from "react-icons/tb";
+import ContentPasteOutlinedIcon from '@mui/icons-material/ContentPasteOutlined';
+import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material";
+
+const StyledCard = styled(Card)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  padding: theme.spacing(1),
+  backgroundColor: theme.palette.background.default,
+}));
+
+const StyledCode = styled(Typography)(({ theme }) => ({
+  overflowX: "auto",
+  fontSize: theme.typography.body2.fontSize,
+  fontFamily: "monospace",
+  marginRight: theme.spacing(1),
+  flexGrow: 1,
+}));
+
+const StyledCopyButton = styled(IconButton)(({ theme }) => ({
+  marginLeft: theme.spacing(1),
+}));
+
+const StyledCheckIcon = styled(CheckOutlinedIcon)(({ theme }) => ({
+  color: theme.palette.success.main,
+}));
 
 const CopyableCommand = ({ command }) => {
   const [copied, setCopied] = useState(false);
@@ -46,26 +76,32 @@ const CopyableCommand = ({ command }) => {
 
   const handleCopySuccess = () => {
     setCopied(true);
+
     setTimeout(() => {
       setCopied(false);
     }, 3000);
   };
 
   return (
-    <div className="w-full bg-gray-800 rounded-2xl text-gray-300 p-4 my-2 flex items-center justify-between relative">
-      <code className="overflow-x-auto text-sm">{command}</code>
-      <button
-        onClick={copyToClipboard}
-        className="bg-gray-700 hover:bg-gray-600 text-white text-sm px-3 py-2 rounded ml-4"
-      >
-        <TbCopy />
-      </button>
-      {copied && (
-        <span className="absolute top-0 right-0 mt-1 mr-1 text-xs text-green-500 bg-gray-900 p-1 rounded">
-          Copied!
-        </span>
+    <StyledCard sx={{ boxShadow: "none" }}>
+      <CardContent sx={{ padding: 0, flexGrow: 1 }}>
+        <StyledCode variant="body2">{command}</StyledCode>
+      </CardContent>
+      {copied ? (
+        <StyledCopyButton disabled>
+          <StyledCheckIcon size={20} />
+        </StyledCopyButton>
+      ) : (
+        <StyledCopyButton
+          onClick={copyToClipboard}
+          aria-label="copy"
+          color="primary"
+        >
+          <ContentPasteOutlinedIcon fontSize="small" />
+        </StyledCopyButton>
       )}
-    </div>
+    </StyledCard>
+
   );
 };
 

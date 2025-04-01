@@ -1,54 +1,32 @@
-import { FaGithub, FaTelegramPlane, FaPaypal, FaTwitter, FaInstagram, FaFacebookF } from 'react-icons/fa';
-
-
-
-// export const SocialIconsRow = () => {
-//     return (
-//       <div className="flex space-x-3 mt-3" id='front_icons'> 
-//         <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
-//           <FaGithub size={20} /> 
-//         </a>
-//         <a href="https://t.me/your-telegram-username" target="_blank" rel="noopener noreferrer">
-//           <FaTelegramPlane size={20} />
-//         </a>
-//         <a href="https://www.paypal.me/your-paypal-username" target="_blank" rel="noopener noreferrer">
-//           <FaPaypal size={20} />
-//         </a>
-//         <a href="https://twitter.com/your-twitter-username" target="_blank" rel="noopener noreferrer">
-//           <FaTwitter size={20} />
-//         </a>
-//         <a href="https://www.instagram.com/your-instagram-username" target="_blank" rel="noopener noreferrer">
-//           <FaInstagram size={20} />
-//         </a>
-//         <a href="https://www.facebook.com/your-facebook-username" target="_blank" rel="noopener noreferrer">
-//           <FaFacebookF size={20} />
-//         </a>
-//       </div>
-//     );
-//   };
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 
 export const SocialIconsRow = () => {
     return (
-      <div className="flex space-x-3 mt-3" id='front_icons'> 
+      <div className="flex space-x-3 mt-3 items-center" id='front_icons'> 
         <a href="https://github.com/Vivekachooz" target="_blank" rel="noopener noreferrer">
-          <FaGithub size={20} /> 
+          <GitHubIcon  /> 
         </a>
         <a href="https://t.me/vivekachooz" target="_blank" rel="noopener noreferrer">
-          <FaTelegramPlane size={20} />
-        </a>
+          <TelegramIcon  />
+                  </a>
         <a href="https://paypal.me/vvkachoooz" target="_blank" rel="noopener noreferrer">
-          <FaPaypal size={20} />
+          <img src="/assets/paypal.png" alt="" className="w-6 bg-gray-800 p-1 rounded" />
         </a>
         <a href="https://twitter.com/Achooz6" target="_blank" rel="noopener noreferrer">
-          <FaTwitter size={20} />
+          <XIcon  />
         </a>
         <a href="https://www.instagram.com/vivekachooz/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram size={20} />
+          <InstagramIcon  />
         </a>
         <a href="https://www.facebook.com/vivek.achooz/" target="_blank" rel="noopener noreferrer">
-          <FaFacebookF size={20} />
+          <FacebookIcon  />
+
         </a>
       </div>
     );

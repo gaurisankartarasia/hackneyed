@@ -31,7 +31,7 @@ const LazyImage = ({ src, alt }) => {
     <div ref={imageRef} className="relative w-full h-24 sm:h-32 rounded overflow-hidden bg-gray-100">
       {!loaded && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <Loader size={24} color="#fff" />
+          <Loader />
         </div>
       )}
       {isVisible && (

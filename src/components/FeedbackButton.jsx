@@ -1,27 +1,25 @@
+
+
 import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import { MdOutlineFeedback } from "react-icons/md";
+import  Fab from '@mui/material/Fab';
+import FeedbackOutlinedIcon from '@mui/icons-material/FeedbackOutlined';
 import FeedbackModal from './FeedbackModal';
 
 const FloatingButton = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <button 
-        className="fixed flex items-center z-50 bottom-0 right-1 bg-gray-600 text-white rounded-full p-2"
-        onClick={() => setShowModal(true)}
+      <Fab
+        onClick={() => setOpen(true)}
+        sx={{ position: 'fixed', bottom: 16, right: 16, zIndex: 1000 ,   width: 30,  
+          height: 30, 
+          minHeight: 'auto'}}
       >
-        <MdOutlineFeedback/> 
-      </button>
-      <CSSTransition
-        in={showModal}
-        timeout={300}
-        classNames="modal"
-        unmountOnExit
-      >
-        <FeedbackModal onClose={() => setShowModal(false)} />
-      </CSSTransition>
+        <FeedbackOutlinedIcon fontSize='small' className='text-gray-600' />
+      </Fab>
+      <FeedbackModal open={open} onClose={() => setOpen(false)} />
+
     </>
   );
 };

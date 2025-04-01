@@ -1,32 +1,40 @@
 
-
-
-
-
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
-import { CiMenuFries } from "react-icons/ci";
+import { Link, useLocation } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import ThemeToggleButton from '../../ThemeToggleButton';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Avatar from '@mui/material/Avatar';
+import CircularProgress from '@mui/material/CircularProgress';
 
-const NavItem = ({ to, children, onClick }) => (
-  <motion.div
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <Link
-      to={to}
-      onClick={onClick}
-      className="text-white hover:text-green-500 transition-colors duration-200"
-    >
-      {children}
-    </Link>
-  </motion.div>
-);
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+
+const navItems = [
+  { href: '/', label: 'Home', icon: <HomeOutlinedIcon /> },
+  { href: '/products', label: 'Products', icon: <ShoppingBagOutlinedIcon /> },
+  { href: '/support', label: 'Support', icon: <SupportAgentOutlinedIcon /> },
+  { href: '/contact', label: 'Contact', icon: <EmailOutlinedIcon /> },
+];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation(); // Get the current location
+
 
   useEffect(() => {
     const image = new Image();
@@ -34,130 +42,115 @@ const Navbar = () => {
     image.onload = () => setIsLoading(false);
   }, []);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  const menuItems = [
-    { href: '/', label: 'Home' },
-    { href: '/products', label: 'Products' },
-    { href: '/support', label: 'Support' },
-    { href: '/contact', label: 'Contact' },
-   
-  ];
-
-  const menuVariants = {
-    closed: {
-      scale: 0,
-      opacity: 0,
-      transformOrigin: 'top right',
-    },
-    open: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        stiffness: 260,
-        damping: 20,
-      },
-    },
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
   };
 
-  return (
-    <nav className="bg-black w-full z-50 fixed top-0">
-      <div className="max-w-9xl mx-auto px-6 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center">
-            <div className="relative h-10 w-10  mr-2">
-              {isLoading ? (
-                <motion.div
-                  animate={{ opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                  className="absolute inset-0 bg-gray-300 rounded-full"
-                />
-              ) : (
-                <motion.img
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  src="https://firebasestorage.googleapis.com/v0/b/react-98765.appspot.com/o/assets%2Fme.jpg?alt=media&token=b955e7b3-74ae-4169-bc6c-a984a6aeab3c"
-                  alt="Me"
-                  className="rounded-full w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
-                />
-              )}
-            </div>
-            <p className="text-white font-bold text-2xl">Hackneyed</p>
-          </Link>
-          <div className="hidden md:block">
-            <div className="ml-10 flex text-dark items-baseline space-x-4">
-              {menuItems.map((item) => (
-                <NavItem key={item.href} to={item.href}>{item.label}</NavItem>
-              ))}
-            </div>
-          </div>
-          <div className="md:hidden bg-black">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded"
-            >
-              <span className="sr-only">Toggle main menu</span>
-              {/* {isOpen ? <X className="h-6 w-6 text-white p-8" /> : <Menu className="h-6 w-6 text-white" />} */}
-              <CiMenuFries className="h-6 w-6 text-white active:text-green-500" />
-            </motion.button>
-          </div>
-        </div>
-      </div>
+  const isActive = (href) => location.pathname === href;
 
-      <AnimatePresence >
-  {isOpen && (
-    <motion.div
-      initial="closed"
-      animate="open"
-      exit="closed"
-      variants={menuVariants}
-      className="md:hidden fixed inset-0 bg-black z-50 overflow-hidden"
-    >
-      <div className="flex flex-col h-full">
-        <div className="flex justify-end p-4">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={toggleMenu}
-            className="text-gray-400 hover:text-green-500"
-          >
-            <X className="h-8 w-8 mr-3" />
-          </motion.button>
-        </div>
-        <motion.div
-          variants={{
-            open: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
-            closed: { transition: { staggerChildren: 0.05, staggerDirection: -1 } }
-          }}
-          className="flex-grow flex flex-col text-dark items-center justify-center space-y-8 mb-32"
-        >
-          <h2 className='text-3xl text-green-500'>Menu</h2>
-          {menuItems.map((item) => (
-            <motion.div
-              key={item.href}
-              variants={{
-                open: { opacity: 1, y: 0 },
-                closed: { opacity: 0, y: 20 }
+  const drawer = (
+    <Box onClick={handleDrawerToggle}>
+      <Typography sx={{ my: 2, marginLeft: 5 }}>
+        Menu
+      </Typography>
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item.label} disablePadding>
+            <ListItemButton component={Link} to={item.href} selected={isActive(item.href)}>
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText  primary={item.label} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  return (
+    <AppBar position="fixed" 
+     >
+      <Toolbar>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit', marginRight: 2 }}>
+          <Box sx={{ position: 'relative', height: 40, width: 40, mr: 1 }}>
+            {isLoading ? (
+              <CircularProgress
+                variant="indeterminate"
+                disableShrink
+                sx={{
+                  animationDuration: '1500ms',
+                  left: 0,
+                  position: 'absolute',
+                  top: 0,
+                  '& .MuiCircularProgress-circle': {
+                    strokeLinecap: 'round',
+                  },
+                }}
+                size={40}
+                thickness={2}
+              />
+            ) : (
+              <Avatar
+                alt="Me"
+                src="https://firebasestorage.googleapis.com/v0/b/react-98765.appspot.com/o/assets%2Fme.jpg?alt=media&token=b955e7b3-74ae-4169-bc6c-a984a6aeab3c"
+                sx={{ width: 40, height: 40, transition: 'transform 0.3s', '&:hover': { transform: 'scale(1.05)' } }}
+              />
+            )}
+          </Box>
+          <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+            Hackneyed
+          </Typography>
+        </Link>
+        <Box sx={{ flexGrow: 1 }} />
+        
+      
+
+
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
+          {navItems.map((item) => (
+            <Button
+              key={item.label}
+              component={Link}
+              to={item.href}
+              sx={{
+                fontSize:'1rem',
+                padding: '10px 15px',
+                color: 'inherit',
+                backgroundColor: isActive(item.href) ? 'rgba(0, 0, 0, 0.08)' : 'transparent', 
+                '&:hover': {
+                  backgroundColor: isActive(item.href) ? 'rgba(0, 0, 0, 0.12)' : 'rgba(0, 0, 0, 0.08)',
+                },
               }}
             >
-              <NavItem to={item.href} onClick={toggleMenu}>
-                <span className="text-3xl">{item.label}</span>
-              </NavItem>
-            </motion.div>
+              {item.label}
+            </Button>
           ))}
-        </motion.div>
-
+        </Box>
         
-      </div>
-    </motion.div>
-  )}
-</AnimatePresence>
-
-    </nav>
+        <Box sx={{ display: { md: 'none', marginRight:7 } }}>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerToggle}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Box>
+        <ThemeToggleButton />
+      </Toolbar>
+      
+      <Drawer
+        anchor="left"
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{
+          keepMounted: true,
+        }}
+        sx={{ width: '300px' }}
+      >
+        {drawer}
+      </Drawer>
+    </AppBar>
   );
 };
 

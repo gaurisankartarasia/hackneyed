@@ -1,109 +1,108 @@
 
+import React, { useState } from "react";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import Typography from "@mui/material/Typography";
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
-import React, { useState } from 'react';
-import { IoMdClose } from "react-icons/io";
-
-const FeedbackModal = ({ onClose }) => {
-  const [selectedOption, setSelectedOption] = useState('');
+const FeedbackModal = ({ open, onClose }) => {
+  const [selectedOption, setSelectedOption] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let emailToSend = '';
-    let subject = ''; 
+    let emailToSend = "";
+    let subject = "";
 
     switch (selectedOption) {
-      case 'links':
-        emailToSend = 'vivekachooz@gmail.com';
-        subject = 'FEEDBACK: Links not working'; // Subject for links feedback
+      case "links":
+        emailToSend = "vivekachooz@gmail.com";
+        subject = "FEEDBACK: Links not working";
         break;
-      case 'bugs':
-        emailToSend = 'gaurisankar.work@gmail.com, vivekachooz@gmail.com';
-        subject = 'FEEDBACK: Bugs found in site'; // Subject for bugs feedback
+      case "bugs":
+        emailToSend = "gaurisankar.work@gmail.com, vivekachooz@gmail.com";
+        subject = "FEEDBACK: Bugs found in site";
         break;
-      case 'others':
-        emailToSend = 'vivekachooz@gmail.com';
-        subject = 'FEEDBACK'; 
-        break;
+      case "others":
+        emailToSend = "vivekachooz@gmail.com";
+        subject = "FEEDBACK";
+            break;
       default:
         return;
     }
 
-    const form = event.target;
-    const formData = new FormData(form);
-    const message = formData.get('message');
-    
-    window.location.href = `mailto:${emailToSend}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
+    window.location.href = `mailto:${emailToSend}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(message)}`;
     onClose();
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="modalContent bg-gray-800 rounded-3xl p-6 w-full max-w-md relative">
-        <button
-          className="absolute top-3 right-3 text-gray-400 p-3 h-10 w-10 bg-gray-600 rounded-full hover:bg-gray-700 active:bg-gray-900 transition-colors duration-300"
+    <Dialog open={open} onClose={onClose} fullWidth maxWidth="sm">
+      <DialogTitle>
+        <Typography variant="h6">Feedback</Typography>
+        <IconButton
           onClick={onClose}
+          sx={{ position: "absolute", right: 10, top: 10 }}
         >
-          <IoMdClose/>
-        </button>
-        <h2 className="text-xl font-semibold mb-4">Feedback</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="flex items-center space-x-2">
-              <input
-                type="radio"
-                name="feedback-type"
-                value="links"
-                onChange={(e) => setSelectedOption(e.target.value)}
-                required
-                className="form-radio"
-              />
-              <span>Links not working</span>
-            </label>
-          </div>
-          <div>
-            <label className="flex items-center space-x-2">
-              <input
-                type="radio"
-                name="feedback-type"
-                value="bugs"
-                onChange={(e) => setSelectedOption(e.target.value)}
-                required
-                className="form-radio"
-              />
-              <span>Bugs found in site</span>
-            </label>
-          </div>
-          <div>
-            <label className="flex items-center space-x-2">
-              <input
-                type="radio"
-                name="feedback-type"
-                value="others"
-                onChange={(e) => setSelectedOption(e.target.value)}
-                required
-                className="form-radio"
-              />
-              <span>Others</span>
-            </label>
-          </div>
-          <textarea
-            name="message"
-            rows="8"
-            style={{ resize: 'none' }}
-            placeholder="Enter your feedback here..."
-            className="w-full rounded-3xl p-2 bg-gray-600"
-            required
-          ></textarea>
-          <button 
-            type="submit" 
-            className="w-full bg-gray-100 text-black py-2 rounded-3xl hover:bg-[#393f44] hover:text-white transition-colors"
+          <CloseOutlinedIcon />
+        </IconButton>
+      </DialogTitle>
+
+      <DialogContent>
+        <FormControl component="fieldset">
+          <RadioGroup
+            value={selectedOption}
+            onChange={(e) => setSelectedOption(e.target.value)}
           >
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
+            <FormControlLabel
+              value="links"
+              control={<Radio />}
+              label="Links not working"
+            />
+            <FormControlLabel
+              value="bugs"
+              control={<Radio />}
+              label="Bugs found in site"
+            />
+            <FormControlLabel
+              value="others"
+              control={<Radio />}
+              label="Others"
+            />
+          </RadioGroup>
+        </FormControl>
+
+        <TextField
+          fullWidth
+          multiline
+          rows={4}
+          variant="outlined"
+          margin="normal"
+          label="Enter your feedback here..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+      </DialogContent>
+
+      <DialogActions>
+        <Button onClick={onClose} color="secondary">
+          Cancel
+        </Button>
+        <Button type="submit" variant="contained" onClick={handleSubmit}>
+          Submit
+        </Button>
+      </DialogActions>
+    </Dialog>
   );
 };
 
