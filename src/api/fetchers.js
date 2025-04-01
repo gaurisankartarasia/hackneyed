@@ -104,8 +104,8 @@ export const fetchRomBuildsForCodename = async (codename) => {
  * @returns {Promise<object>}
  */
 export const fetchGroupsConfig = async () => {
-  // const githubUrl = `${GITHUB_BASE_URL}/config/groups.json`;
-  const githubUrl = `/config/groups.json`;
+  const githubUrl = `${GITHUB_BASE_URL}/config/groups.json`;
+  // const githubUrl = `/config/groups.json`;
 
   return fetchJson(githubUrl, true, {});
 };
@@ -115,7 +115,7 @@ export const fetchGroupsConfig = async () => {
  * @returns {Promise<object>}
  */
 export const fetchMeConfig = async () => {
-  // const githubUrl = `${GITHUB_BASE_URL}/config/me.json`;
-  const githubUrl = `/config/site_info.json`;
+  const githubUrl = `${GITHUB_BASE_URL}/config/me.json`;
+  // const githubUrl = `/config/site_info.json`;
   return fetchJson(githubUrl, true, {});
 };
