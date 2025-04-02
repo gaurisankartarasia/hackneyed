@@ -9,6 +9,7 @@ import ContactPage from "./pages/contact/page";
 import SupportSection from "./pages/Support/Support";
 import ScrollToTop from "./hooks/scrollFix";
 import FeedbackButton from "./components/FeedbackButton";
+import PageNotFound from "./page_not_found"
 
 import "./App.css";
 
@@ -37,6 +38,11 @@ function App() {
           />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/support" element={<SupportSection />} />
+
+
+  {/* This is the catch-all route. It matches any path that hasn't been matched before. */}
+  <Route path="*" element={<PageNotFound />} />
+
         </Routes>
       </BrowserRouter>
     </>
