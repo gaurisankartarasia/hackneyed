@@ -1,24 +1,20 @@
-
-import React, { useState } from 'react';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
+import React, { useState } from "react";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
 import { useMeConfig } from "../../hooks/useFetchMeConfig";
+import Loader from "../../components/Loader";
 
 const ContactPage = () => {
-
-
- const { data, error, isLoading } = useMeConfig();
-  
-  
+  const { data, error, isLoading } = useMeConfig();
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -36,13 +32,26 @@ const ContactPage = () => {
     window.location.href = mailtoLink;
   };
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error loading data</p>;
+  if (isLoading)
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <Loader />
+      </div>
+    );
+  if (error)
+    return (
+      <p className="flex justify-center items-center min-h-screen">
+        Error occured.
+      </p>
+    );
 
   return (
-    <Container maxWidth="sm" sx={{marginTop:10}} >
-      <Box display="flex" justifyContent="center" alignItems="center" >
-        <Paper elevation={4} sx={{ padding: 4, borderRadius: 7, boxShadow:'none' }}>
+    <Container maxWidth="sm" sx={{ marginTop: 10 }}>
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <Paper
+          elevation={4}
+          sx={{ padding: 4, borderRadius: 7, boxShadow: "none" }}
+        >
           <Typography variant="h4" align="center" gutterBottom>
             Contact Us
           </Typography>
@@ -111,12 +120,7 @@ const ContactPage = () => {
               }}
             />
 
-            <Button
-              type="submit"
-              variant="contained"
-              fullWidth
-              sx={{ mt: 2,}}
-            >
+            <Button type="submit" variant="contained" fullWidth sx={{ mt: 2 }}>
               Send Message
             </Button>
           </form>

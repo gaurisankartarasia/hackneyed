@@ -23,7 +23,7 @@ const VivekPortfolioHero = () => {
 
    const { data } = useMeConfig();
 
-    if (!data) return null
+    if (!data) return 
 
   const greenColor = '#4ade80'; 
 

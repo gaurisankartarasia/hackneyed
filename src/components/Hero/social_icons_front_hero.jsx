@@ -7,16 +7,11 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import { useMeConfig } from "../../hooks/useFetchMeConfig";
 
 
-  
-
-
-
-
 export const SocialIconsRow = () => {
 
   const { data} = useMeConfig();
 
-  if (!data) return null
+  if (!data) return 
 
     return (
       <div className="flex space-x-3 mt-3 items-center" id='front_icons'> 

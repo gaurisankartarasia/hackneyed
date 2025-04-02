@@ -10,9 +10,8 @@ const queryClient = new QueryClient({
     queries: {
       // --- THIS IS KEY FOR SESSION CACHING ---
       staleTime: Infinity, // Data is considered fresh until manually invalidated or page refresh
-      gcTime: 1000 * 60 * 60 * 24, // How long unused data stays in memory (e.g., 24 hours). Cleared on refresh anyway.
-      // --- Other useful defaults ---
-      refetchOnWindowFocus: false, // Don't refetch just because user tabs back to the page
+      gcTime: 1000 * 60 * 60 * 24, 
+      refetchOnWindowFocus: false, 
       retry: 1, // Retry failed fetches once (or set to false)
     },
   },

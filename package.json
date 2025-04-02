@@ -1,7 +1,7 @@
 {
   "name": "hackneyed",
   "private": true,
-  "version": "1.0 beta",
+  "version": "1.0 Alpha",
   "type": "module",
   "scripts": {
       "dev": "vite --host",

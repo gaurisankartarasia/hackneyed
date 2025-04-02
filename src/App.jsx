@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/page";
+import Navbar from "./components/Navbar/Navbar";
 import PortfolioHero from "./components/Hero/page";
 import AboutSection from "./components/About/page";
 import CustomROMProductsPage from "./pages/products/page";
@@ -16,28 +16,28 @@ function App() {
   return (
     <>
       <BrowserRouter>
-          <ScrollToTop />
-          <FeedbackButton />
-          <Navbar />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <PortfolioHero />
-                  <AboutSection />
-                </>
-              }
-            />
-            <Route path="/products" element={<CustomROMProductsPage />} />
-            <Route path="/products/:codename" element={<AvailableROMsPage />} />
-            <Route
-              path="/products/:codename/:romName"
-              element={<ROMDetailsPage />}
-            />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/support" element={<SupportSection />} />
-          </Routes>
+        <ScrollToTop />
+        <FeedbackButton />
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <PortfolioHero />
+                <AboutSection />
+              </>
+            }
+          />
+          <Route path="/products" element={<CustomROMProductsPage />} />
+          <Route path="/products/:codename" element={<AvailableROMsPage />} />
+          <Route
+            path="/products/:codename/:romName"
+            element={<ROMDetailsPage />}
+          />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/support" element={<SupportSection />} />
+        </Routes>
       </BrowserRouter>
     </>
   );
